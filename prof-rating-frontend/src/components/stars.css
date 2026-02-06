@@ -1,0 +1,79 @@
+.stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars-container {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.star {
+  color: var(--border);
+  transition: var(--transition-fast);
+  position: relative;
+}
+
+.star--filled {
+  color: var(--star);
+}
+
+.star--partial::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--star);
+  width: var(--partial-width);
+  overflow: hidden;
+}
+
+/* Sizes */
+.stars--sm .star {
+  font-size: 0.9rem;
+}
+
+.stars--md .star {
+  font-size: 1.1rem;
+}
+
+.stars--lg .star {
+  font-size: 1.4rem;
+}
+
+.stars--xl .star {
+  font-size: 1.8rem;
+}
+
+/* Interactive */
+.stars--interactive .star {
+  cursor: pointer;
+}
+
+.stars--interactive .star:hover {
+  transform: scale(1.2);
+}
+
+.stars--interactive .star:active {
+  transform: scale(1.1);
+}
+
+/* Value display */
+.stars-value {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-left: 4px;
+}
+
+.stars--sm .stars-value {
+  font-size: 0.85rem;
+}
+
+.stars--md .stars-value {
+  font-size: 0.95rem;
+}
+
+.stars--lg .stars-value {
+  font-size: 1.1rem;
+}
