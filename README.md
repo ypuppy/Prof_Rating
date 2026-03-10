@@ -8,8 +8,7 @@ NUS doesn't have a decent professor rating system, so I built one. Now you can f
 
 - **No more blind bidding** — Check ratings before you commit your precious ModReg points
 - **Real student reviews** — Honest feedback from people who actually sat through those lectures
-- **Simple & clean UI** — No cluttered mess, just the info you need
-- **Anonymous reviews** — Speak your mind without fear
+
 
 ## Features
 
@@ -23,9 +22,8 @@ NUS doesn't have a decent professor rating system, so I built one. Now you can f
 
 **Frontend**
 - React + Vite
-- Pure CSS (no frameworks, just vibes)
-- Plus Jakarta Sans font
-
+- Pure CSS
+  
 **Backend**
 - FastAPI (Python)
 - MongoDB
