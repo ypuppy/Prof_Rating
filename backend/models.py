@@ -7,9 +7,6 @@ class ProfessorCreate(BaseModel):
     faculty: Optional[str] = Field(default=None, max_length=120)
 
 class ReviewCreate(BaseModel):
-    rating: int = Field(ge=0, le=5)
+    rating: int = Field(ge=1, le=5)
     module_code: Optional[str] = Field(default=None, max_length=20)
-    comment: Optional[str] = Field(default=None, max_length=2000)
-
-
-    
+    comment: Optional[str] = Field(default=None, max_length=1000)

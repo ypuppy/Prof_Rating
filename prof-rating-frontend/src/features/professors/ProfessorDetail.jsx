@@ -6,40 +6,46 @@ import Stars from '../../components/stars';
 import Pill from '../../components/Pill';
 import Button from '../../components/Button';
 import ReviewForm from '../reviews/ReviewForm';
-import ReviewList from '../reviews/Reviewlist';
+import ReviewList from '../reviews/ReviewList';
 import './ProfessorDetail.css';
 
 export default function ProfessorDetail({ professorId, onClose }) {
-  const [professor, setProfessor] = useState(null);
-  const [reviews, setReviews] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [showReviewForm, setShowReviewForm] = useState(false);
+  const [reloadKey, setReloadKey] = useState(0);
+  const [loaded, setLoaded] = useState({ key: null, professor: null, reviews: [] });
 
-  const loadData = async () => {
-    if (!professorId) return;
-    
-    setLoading(true);
-    try {
-      const [profData, reviewsData] = await Promise.all([
-        fetchProfessorDetail(professorId),
-        fetchReviews(professorId)
-      ]);
-      setProfessor(profData);
-      setReviews(reviewsData);
-    } catch (err) {
-      console.error('Failed to load professor details:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
+  // Still loading until the data we hold matches the current request
+  const requestKey = `${professorId}:${reloadKey}`;
+  const loading = loaded.key !== requestKey;
+  const { professor, reviews } = loaded;
 
   useEffect(() => {
-    loadData();
-  }, [professorId]);
+    if (!professorId) return;
+
+    // Ignore responses that arrive after the user has switched professors
+    let cancelled = false;
+
+    Promise.all([
+      fetchProfessorDetail(professorId),
+      fetchReviews(professorId)
+    ])
+      .then(([profData, reviewsData]) => {
+        if (!cancelled) setLoaded({ key: requestKey, professor: profData, reviews: reviewsData });
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        console.error('Failed to load professor details:', err);
+        setLoaded({ key: requestKey, professor: null, reviews: [] });
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [professorId, requestKey]);
 
   const handleReviewSubmitted = () => {
     setShowReviewForm(false);
-    loadData(); // Refresh data
+    setReloadKey((k) => k + 1); // Refresh data
   };
 
   if (!professorId) {

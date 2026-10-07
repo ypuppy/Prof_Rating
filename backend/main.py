@@ -1,3 +1,5 @@
+import re
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -35,7 +37,7 @@ def create_professor(payload: ProfessorCreate):
     name = payload.name.strip()
 
     # 1. Check for duplicate professor (simple MVP rule)
-    if professors_col.find_one({"name": name}):
+    if professors_col.find_one({"name": {"$regex": f"^{re.escape(name)}$", "$options": "i"}}):
         raise HTTPException(status_code=409, detail="Professor already exists")
 
     # 2. Build DB document (input -> DB layer)
@@ -67,22 +69,42 @@ def list_professors(query: Optional[str] = None, limit: int = 50):
     mongo_filter = {}
     if query and query.strip():
         q = query.strip()
-        mongo_filter = {"name": {"$regex": q, "$options": "i"}}
+        mongo_filter = {"name": {"$regex": re.escape(q), "$options": "i"}}
 
-    cursor = (
-        professors_col.find(mongo_filter, {"name": 1, "department": 1, "faculty": 1})
-        .sort("name", 1)
-        .limit(safe_limit)
-    )
+    pipeline = [
+        {"$match": mongo_filter},
+        {"$sort": {"name": 1}},
+        {"$limit": safe_limit},
+        {
+            "$lookup": {
+                "from": reviews_col.name,
+                "localField": "_id",
+                "foreignField": "professor_id",
+                "as": "reviews",
+            }
+        },
+        {
+            "$project": {
+                "name": 1,
+                "department": 1,
+                "faculty": 1,
+                "avg_rating": {"$avg": "$reviews.rating"},
+                "review_count": {"$size": "$reviews"},
+            }
+        },
+    ]
 
     results = []
-    for doc in cursor:
+    for doc in professors_col.aggregate(pipeline):
+        avg_rating = doc.get("avg_rating")
         results.append(
             {
                 "id": str(doc["_id"]),
                 "name": doc.get("name"),
                 "department": doc.get("department"),
                 "faculty": doc.get("faculty"),
+                "avg_rating": round(avg_rating, 2) if avg_rating is not None else None,
+                "review_count": doc.get("review_count", 0),
             }
         )
 
@@ -95,8 +117,8 @@ def parse_object_id(id_str: str) -> ObjectId:
 
 @app.post("/professors/{professor_id}/reviews")
 def create_review(
+    payload: ReviewCreate,
     professor_id: str = Path(..., min_length=1),
-    payload: ReviewCreate = None,
 ):
     prof_oid = parse_object_id(professor_id)
 
