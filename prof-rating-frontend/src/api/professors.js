@@ -17,3 +17,14 @@ export async function fetchProfessorDetail(id) {
   if (!res.ok) throw new Error(data.detail || "Failed to fetch professor");
   return data;
 }
+
+export async function createProfessor(payload) {
+  const res = await fetch(`${API_BASE}/professors`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.detail || "Failed to add professor");
+  return data;
+}

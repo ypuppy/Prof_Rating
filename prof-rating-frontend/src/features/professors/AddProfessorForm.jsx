@@ -1,8 +1,7 @@
 import { useState } from 'react';
+import { createProfessor } from '../../api/professors';
 import Button from '../../components/Button';
 import './AddProfessorForm.css';
-
-const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
 
 export default function AddProfessorForm({ onSuccess, onCancel }) {
   const [name, setName] = useState('');
@@ -23,21 +22,11 @@ export default function AddProfessorForm({ onSuccess, onCancel }) {
     setError('');
 
     try {
-      const res = await fetch(`${API_BASE}/professors`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          department: department.trim() || null,
-          faculty: faculty.trim() || null,
-        }),
+      const data = await createProfessor({
+        name: name.trim(),
+        department: department.trim() || null,
+        faculty: faculty.trim() || null,
       });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.detail || 'Failed to add professor');
-      }
 
       // Success - clear form and notify parent
       setName('');

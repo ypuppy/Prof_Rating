@@ -40,7 +40,6 @@ export default function ProfessorList({
             hoverable
             active={isActive}
             onClick={() => onSelect(professor.id)}
-             style={{ border: '1px solid blue' }} 
           >
             <div className="professor-card-content">
               <div className="professor-info">
