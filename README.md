@@ -26,7 +26,8 @@ NUS doesn't have a decent professor rating system, so I built one. Now you can f
   
 **Backend**
 - FastAPI (Python)
-- MongoDB
+- PostgreSQL + SQLAlchemy 2.0
+- Alembic (schema migrations)
 
 ## Getting Started
 
@@ -34,25 +35,53 @@ NUS doesn't have a decent professor rating system, so I built one. Now you can f
 
 - Node.js 18+
 - Python 3.10+
-- MongoDB
+- Docker (for the local PostgreSQL)
 
 ### Backend Setup
 
 ```bash
 cd backend
 
+# Start PostgreSQL (data persists in a Docker volume)
+docker compose up -d --wait
+
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install fastapi uvicorn pymongo python-dotenv
+pip install -r requirements.txt
+
+# Configure and create the tables
+cp .env.example .env
+alembic upgrade head
 
 # Run the server
 uvicorn main:app --reload
 ```
 
 The API will be running at `http://127.0.0.1:8000`
+
+Run the tests (uses a separate `profrating_test` database):
+
+```bash
+docker compose exec db psql -U profrating -c 'CREATE DATABASE profrating_test'  # first time only
+pytest
+```
+
+Open a SQL shell on the local database:
+
+```bash
+docker compose exec db psql -U profrating
+```
+
+#### Migrating data from the old MongoDB
+
+```bash
+MONGODB_URI="mongodb+srv://..." python scripts/migrate_from_mongo.py
+```
+
+Run it once on an empty database. Professors whose names only differ by case are merged, and reviews with invalid ratings or no matching professor are skipped.
 
 ### Frontend Setup
 
@@ -83,9 +112,14 @@ The app will be running at `http://localhost:5173`
 ```
 prof-rating/
 ├── backend/
-│   ├── main.py          # FastAPI routes
-│   ├── models.py        # Pydantic models
-│   └── db.py            # MongoDB connection
+│   ├── main.py              # FastAPI routes
+│   ├── models.py            # Pydantic request models
+│   ├── tables.py            # SQLAlchemy tables
+│   ├── db.py                # PostgreSQL connection
+│   ├── migrations/          # Alembic schema migrations
+│   ├── scripts/             # One-off scripts (Mongo import)
+│   ├── tests/               # API tests
+│   └── docker-compose.yml   # Local PostgreSQL
 │
 └── prof-rating-frontend/
     └── src/
