@@ -117,6 +117,10 @@ class Review(Base):
     rating: Mapped[int] = mapped_column(SmallInteger)
     module_code: Mapped[Optional[str]] = mapped_column(String(20))
     comment: Mapped[Optional[str]] = mapped_column(Text)
+    # When the student took the class. AY2025/26 Sem 1 -> academic_year=2025, semester=1.
+    # Nullable only because older reviews were written before this was asked; the API requires it.
+    academic_year: Mapped[Optional[int]] = mapped_column(SmallInteger)
+    semester: Mapped[Optional[int]] = mapped_column(SmallInteger)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
@@ -125,6 +129,10 @@ class Review(Base):
 
     __table_args__ = (
         CheckConstraint("rating BETWEEN 1 AND 5", name="ck_reviews_rating_range"),
+        # 1 = Sem 1, 2 = Sem 2, 3 = Special Term 1, 4 = Special Term 2
+        CheckConstraint("semester BETWEEN 1 AND 4", name="ck_reviews_semester_range"),
+        # Both or neither
+        CheckConstraint("(academic_year IS NULL) = (semester IS NULL)", name="ck_reviews_term_complete"),
         # Serves "reviews for professor X, newest first"
         Index("ix_reviews_professor_created", professor_id, created_at.desc()),
     )
@@ -144,6 +152,8 @@ class DeletedReview(Base):
     rating: Mapped[int] = mapped_column(SmallInteger)
     module_code: Mapped[Optional[str]] = mapped_column(String(20))
     comment: Mapped[Optional[str]] = mapped_column(Text)
+    academic_year: Mapped[Optional[int]] = mapped_column(SmallInteger)
+    semester: Mapped[Optional[int]] = mapped_column(SmallInteger)
     original_created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
     deleted_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()

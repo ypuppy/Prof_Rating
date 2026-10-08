@@ -104,6 +104,24 @@ export default function ProfessorDetail({ professorId, onClose, refreshKey = 0, 
           )}
         </div>
 
+        {professor.modules?.length > 0 && (
+          <div className="detail-modules">
+            <span className="detail-modules-label">Modules taught (from reviews)</span>
+            <ul className="detail-modules-list">
+              {professor.modules.map((m) => (
+                <li
+                  key={m.code}
+                  className="module-chip"
+                  title={`${m.title ? `${m.title} · ` : ''}${m.review_count} ${m.review_count === 1 ? 'review' : 'reviews'}`}
+                >
+                  <span className="module-chip-code">{m.code}</span>
+                  <span className="module-chip-count">{m.review_count}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div className="detail-rating">
           {professor.avg_rating ? (
             <>

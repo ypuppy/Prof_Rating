@@ -90,15 +90,19 @@ def search_modules(query: str = "", limit: int = 10, db: Session = Depends(get_d
         return {"items": []}
 
     code_prefix = Module.code.startswith(q.upper(), autoescape=True)  # served by ix_modules_code_prefix
+    if len(q) < 3:
+        # "CS" is a code prefix, not a title search: matching titles would pull in "Physics",
+        # and the OR would force a full table scan instead of using the prefix index
+        match = code_prefix
+    else:
+        match = or_(
+            code_prefix,
+            Module.title.icontains(q, autoescape=True),
+            func.word_similarity(q, Module.title) >= 0.6,  # stricter: titles are long
+        )
     stmt = (
         select(Module)
-        .where(
-            or_(
-                code_prefix,
-                Module.title.icontains(q, autoescape=True),
-                func.word_similarity(q, Module.title) >= 0.6,  # stricter: titles are long
-            )
-        )
+        .where(match)
         .order_by(
             case((code_prefix, 0), (Module.title.icontains(q, autoescape=True), 1), else_=2),
             Module.code,

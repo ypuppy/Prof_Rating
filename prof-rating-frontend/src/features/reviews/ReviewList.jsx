@@ -1,6 +1,7 @@
 import Card from '../../components/Card';
 import Stars from '../../components/stars';
 import Pill from '../../components/Pill';
+import { formatTerm } from '../../utils/terms';
 import './ReviewList.css';
 
 function formatDate(dateString) {
@@ -37,6 +38,9 @@ export default function ReviewList({ reviews = [] }) {
             <Stars value={review.rating} size="sm" />
             {review.module_code && (
               <Pill variant="accent" size="sm">{review.module_code}</Pill>
+            )}
+            {formatTerm(review.academic_year, review.semester) && (
+              <Pill variant="default" size="sm">{formatTerm(review.academic_year, review.semester)}</Pill>
             )}
             <span className="review-date">{formatDate(review.created_at)}</span>
           </div>

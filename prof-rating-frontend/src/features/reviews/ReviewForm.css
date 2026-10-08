@@ -137,3 +137,19 @@
   justify-content: flex-end;
   padding-top: 8px;
 }
+
+.term-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.term-row select {
+  cursor: pointer;
+}
+
+.term-row select:invalid,
+.term-row select option[value=""] {
+  color: var(--text-muted);
+}
+

@@ -8,7 +8,8 @@ from db import SessionLocal
 from tables import Department, Faculty, Module
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts"))
-from sync_nus_data import build_reference_data, current_academic_year  # noqa: E402
+from sync_nus_data import build_reference_data  # noqa: E402
+from terms import current_academic_year  # noqa: E402
 
 
 @pytest.fixture
@@ -32,6 +33,7 @@ def reference_data():
             Module(code="CS2040S", title="Data Structures and Algorithms"),
             Module(code="MA1521", title="Calculus for Computing"),
             Module(code="CS50%X", title="Odd code with a wildcard"),
+            Module(code="PC1101", title="Frontiers of Physics"),
         ])
         db.commit()
 
@@ -106,6 +108,14 @@ def test_build_reference_data_cleans_nusmods_input():
 
 
 def test_current_academic_year_starts_in_august():
-    assert current_academic_year(date(2026, 10, 8)) == "2026-2027"
-    assert current_academic_year(date(2026, 7, 31)) == "2025-2026"
-    assert current_academic_year(date(2026, 8, 1)) == "2026-2027"
+    assert current_academic_year(date(2026, 10, 8)) == 2026
+    assert current_academic_year(date(2026, 7, 31)) == 2025
+    assert current_academic_year(date(2026, 8, 1)) == 2026
+
+
+def test_short_module_query_only_matches_code_prefix(anon, reference_data):
+    # "cs" appears inside "Physics", but a 2-letter query is treated as a code prefix only
+    assert names(anon, "/reference/modules", "code", query="cs") == ["CS2040S", "CS50%X"]
+    # From 3 characters on, titles are searched too
+    assert names(anon, "/reference/modules", "code", query="phys") == ["PC1101"]
+

@@ -41,6 +41,8 @@ def my_review_to_dict(r: Review) -> dict:
         "rating": r.rating,
         "module_code": r.module_code,
         "comment": r.comment,
+        "academic_year": r.academic_year,
+        "semester": r.semester,
         "created_at": r.created_at.isoformat(),
     }
 
@@ -52,6 +54,8 @@ def deleted_review_to_dict(d: DeletedReview) -> dict:
         "rating": d.rating,
         "module_code": d.module_code,
         "comment": d.comment,
+        "academic_year": d.academic_year,
+        "semester": d.semester,
         "original_created_at": d.original_created_at.isoformat(),
         "deleted_at": d.deleted_at.isoformat(),
         "expires_at": d.expires_at.isoformat(),
@@ -93,6 +97,8 @@ def delete_my_review(review_id: int, user: User = Depends(get_current_user), db:
         rating=review.rating,
         module_code=review.module_code,
         comment=review.comment,
+        academic_year=review.academic_year,
+        semester=review.semester,
         original_created_at=review.created_at,
         expires_at=now() + DELETED_REVIEW_TTL,
     )

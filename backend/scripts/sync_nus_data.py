@@ -17,7 +17,6 @@ import re
 import sys
 import urllib.request
 from collections import Counter
-from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -26,6 +25,7 @@ from sqlalchemy.dialects.postgresql import insert
 
 from db import SessionLocal
 from tables import Department, Faculty, Module
+from terms import current_academic_year
 
 NUSMODS_URL = "https://api.nusmods.com/v2/{year}/moduleInfo.json"
 
@@ -107,11 +107,9 @@ def build_reference_data(module_info):
     return modules, departments, placeholder_codes
 
 
-def current_academic_year(today=None):
-    """NUS academic years start in August: Oct 2026 -> "2026-2027", Mar 2026 -> "2025-2026"."""
-    today = today or date.today()
-    start = today.year if today.month >= 8 else today.year - 1
-    return f"{start}-{start + 1}"
+def nusmods_year(start_year):
+    """2026 -> "2026-2027", the format NUSMods URLs use."""
+    return f"{start_year}-{start_year + 1}"
 
 
 def fetch_module_info(year):
@@ -132,7 +130,7 @@ def upsert(db, table, rows, key, update_cols, batch=1000):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--year", default=current_academic_year(), help="Academic year, e.g. 2026-2027")
+    parser.add_argument("--year", default=nusmods_year(current_academic_year()), help="Academic year, e.g. 2026-2027")
     args = parser.parse_args()
 
     print(f"Downloading NUSMods module info for {args.year} ...")

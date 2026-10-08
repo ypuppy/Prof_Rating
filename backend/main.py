@@ -13,7 +13,7 @@ from me import router as me_router
 from me import take_deleted_review
 from reference import router as reference_router
 from models import ProfessorCreate, ReviewCreate
-from tables import Professor, Review, User
+from tables import Module, Professor, Review, User
 
 app = FastAPI()
 app.include_router(auth_router)
@@ -48,6 +48,8 @@ def review_to_dict(r: Review) -> dict:
         "rating": r.rating,
         "module_code": r.module_code,
         "comment": r.comment,
+        "academic_year": r.academic_year,
+        "semester": r.semester,
         "created_at": r.created_at.isoformat() if r.created_at else None,
     }
 
@@ -63,6 +65,21 @@ def professors_with_stats():
         .outerjoin(Review, Review.professor_id == Professor.id)
         .group_by(Professor.id)
     )
+
+
+def modules_taught(db: Session, professor_id: int) -> list[dict]:
+    """Module codes students mentioned in this professor's reviews, most-reviewed first."""
+    stmt = (
+        select(Review.module_code, Module.title, func.count().label("review_count"))
+        .outerjoin(Module, Module.code == Review.module_code)  # title is unknown for codes not on NUSMods
+        .where(Review.professor_id == professor_id, Review.module_code.is_not(None))
+        .group_by(Review.module_code, Module.title)
+        .order_by(func.count().desc(), Review.module_code)
+    )
+    return [
+        {"code": code, "title": title, "review_count": n}
+        for code, title, n in db.execute(stmt)
+    ]
 
 
 @app.get("/health")
@@ -112,7 +129,7 @@ def get_professor(professor_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Professor not found")
 
     p, avg, count = row
-    return professor_to_dict(p, avg, count)
+    return {**professor_to_dict(p, avg, count), "modules": modules_taught(db, professor_id)}
 
 
 @app.post("/professors/{professor_id}/reviews")
@@ -135,6 +152,8 @@ def create_review(
         rating=payload.rating,
         module_code=payload.module_code.strip().upper() if payload.module_code else None,
         comment=payload.comment.strip() if payload.comment else None,
+        academic_year=payload.academic_year,
+        semester=payload.semester,
     )
     db.add(review)
     db.commit()
