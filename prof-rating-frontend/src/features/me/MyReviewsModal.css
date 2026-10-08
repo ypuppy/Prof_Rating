@@ -1,0 +1,232 @@
+.my-reviews-modal {
+  max-width: 640px;
+}
+
+.my-reviews {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.my-reviews-header h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: var(--text-primary);
+}
+
+.my-reviews-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.my-reviews-close {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: var(--radius-full);
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.my-reviews-close:hover {
+  background: var(--bg-active);
+}
+
+.my-reviews-error {
+  padding: 12px 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius-md);
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+/* Shown right after deleting: offer to rewrite from the cached copy */
+.rewrite-prompt {
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+}
+
+.rewrite-prompt-title {
+  margin: 0 0 4px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.rewrite-prompt-text {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.rewrite-prompt-actions,
+.my-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.my-reviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.my-reviews-section-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.my-reviews-prof {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -8px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.my-reviews-prof:hover {
+  background: var(--bg-hover);
+}
+
+.my-reviews-prof-avatar {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: grid;
+  place-items: center;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.my-reviews-prof-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.my-reviews-prof-name {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.my-reviews-prof-dept {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.my-reviews-prof-count {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-hover);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+}
+
+.my-review-card {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.my-review-card.is-deleted {
+  border-style: dashed;
+  background: var(--bg-primary);
+}
+
+.my-review-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.deleted-prof {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.my-review-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.my-review-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.my-review-comment {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.my-review-comment.is-empty {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.confirm-text {
+  margin-right: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.my-reviews-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.my-reviews-empty {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--text-muted);
+}
+
+.my-reviews-empty p {
+  margin: 0 0 4px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}

@@ -6,11 +6,17 @@ from sqlalchemy import func, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
+from auth import get_current_user
+from auth import router as auth_router
 from db import get_db
+from me import router as me_router
+from me import take_deleted_review
 from models import ProfessorCreate, ReviewCreate
-from tables import Professor, Review
+from tables import Professor, Review, User
 
 app = FastAPI()
+app.include_router(auth_router)
+app.include_router(me_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -62,7 +68,7 @@ def health():
     return {"ok": True, "service": "backend"}
 
 
-@app.post("/professors")
+@app.post("/professors", dependencies=[Depends(get_current_user)])
 def create_professor(payload: ProfessorCreate, db: Session = Depends(get_db)):
     prof = Professor(
         name=payload.name.strip(),
@@ -108,12 +114,22 @@ def get_professor(professor_id: int, db: Session = Depends(get_db)):
 
 
 @app.post("/professors/{professor_id}/reviews")
-def create_review(professor_id: int, payload: ReviewCreate, db: Session = Depends(get_db)):
+def create_review(
+    professor_id: int,
+    payload: ReviewCreate,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
     if db.get(Professor, professor_id) is None:
         raise HTTPException(status_code=404, detail="Professor not found")
 
+    if payload.replaces_deleted_review_id is not None:
+        take_deleted_review(db, user, payload.replaces_deleted_review_id, professor_id)
+
+    # No per-user limit: the same student may review a professor more than once
     review = Review(
         professor_id=professor_id,
+        user_id=user.id,
         rating=payload.rating,
         module_code=payload.module_code.strip().upper() if payload.module_code else None,
         comment=payload.comment.strip() if payload.comment else None,

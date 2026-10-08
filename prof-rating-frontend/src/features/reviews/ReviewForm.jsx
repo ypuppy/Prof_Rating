@@ -2,19 +2,23 @@ import { useState } from 'react';
 import { createReview } from '../../api/reviews';
 import Stars from '../../components/stars';
 import Button from '../../components/Button';
+import { useAuth } from '../auth/AuthContext';
 import './ReviewForm.css';
 
 export default function ReviewForm({ 
   professorId, 
   professorName,
   onSubmitted, 
-  onCancel 
+  onCancel,
+  // Rewriting a deleted review: pre-fill its content and clear it from the cache on submit
+  rewriteOf = null,
 }) {
-  const [rating, setRating] = useState(0);
-  const [moduleCode, setModuleCode] = useState('');
-  const [comment, setComment] = useState('');
+  const [rating, setRating] = useState(rewriteOf?.rating ?? 0);
+  const [moduleCode, setModuleCode] = useState(rewriteOf?.module_code ?? '');
+  const [comment, setComment] = useState(rewriteOf?.comment ?? '');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const { promptLogin } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,11 +35,13 @@ export default function ReviewForm({
       await createReview(professorId, { 
         rating, 
         module_code: moduleCode || null,
-        comment: comment || null 
+        comment: comment || null,
+        replaces_deleted_review_id: rewriteOf?.id ?? null,
       });
       onSubmitted?.();
     } catch (err) {
-      setError(err.message || 'Failed to submit review');
+      if (err.status === 401) promptLogin();
+      setError(err.status === 401 ? 'Your session expired. Log in, then submit again.' : err.message || 'Failed to submit review');
     } finally {
       setLoading(false);
     }
@@ -44,7 +50,7 @@ export default function ReviewForm({
   return (
     <div className="review-form">
       <div className="review-form-header">
-        <h2>Write a Review</h2>
+        <h2>{rewriteOf ? 'Rewrite Your Review' : 'Write a Review'}</h2>
         {professorName && (
           <p className="review-form-subtitle">for {professorName}</p>
         )}
@@ -131,7 +137,7 @@ export default function ReviewForm({
             variant="primary"
             loading={loading}
           >
-            Submit Review
+            {rewriteOf ? 'Post New Version' : 'Submit Review'}
           </Button>
         </div>
       </form>
