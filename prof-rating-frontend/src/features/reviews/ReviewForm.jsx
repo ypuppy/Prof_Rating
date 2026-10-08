@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { createReview } from '../../api/reviews';
 import Stars from '../../components/stars';
 import Button from '../../components/Button';
+import Autocomplete from '../../components/Autocomplete';
+import { searchModules } from '../../api/reference';
+import { SEMESTERS, academicYearOptions, formatAcademicYear } from '../../utils/terms';
 import { useAuth } from '../auth/AuthContext';
 import './ReviewForm.css';
 
@@ -16,6 +19,12 @@ export default function ReviewForm({
   const [rating, setRating] = useState(rewriteOf?.rating ?? 0);
   const [moduleCode, setModuleCode] = useState(rewriteOf?.module_code ?? '');
   const [comment, setComment] = useState(rewriteOf?.comment ?? '');
+  // Kept as strings because <select> values are strings; '' means "not chosen yet"
+  const [academicYear, setAcademicYear] = useState(rewriteOf?.academic_year ? String(rewriteOf.academic_year) : '');
+  const [semester, setSemester] = useState(rewriteOf?.semester ? String(rewriteOf.semester) : '');
+  // A review being rewritten may be from further back than the default range
+  const yearOptions = [...new Set([...academicYearOptions(), rewriteOf?.academic_year].filter(Boolean))]
+    .sort((a, b) => b - a);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { promptLogin } = useAuth();
@@ -27,6 +36,10 @@ export default function ReviewForm({
       setError('Please select a rating');
       return;
     }
+    if (!academicYear || !semester) {
+      setError('Please select when you took this class');
+      return;
+    }
 
     setLoading(true);
     setError('');
@@ -36,6 +49,8 @@ export default function ReviewForm({
         rating, 
         module_code: moduleCode || null,
         comment: comment || null,
+        academic_year: Number(academicYear),
+        semester: Number(semester),
         replaces_deleted_review_id: rewriteOf?.id ?? null,
       });
       onSubmitted?.();
@@ -79,19 +94,52 @@ export default function ReviewForm({
           </div>
         </div>
 
+        {/* When the class was taken */}
+        <div className="form-group">
+          <label className="form-label" htmlFor="academicYear">When did you take this class? *</label>
+          <div className="term-row">
+            <select
+              id="academicYear"
+              className="form-input"
+              value={academicYear}
+              onChange={(e) => setAcademicYear(e.target.value)}
+              aria-label="Academic year"
+            >
+              <option value="" disabled>Academic year</option>
+              {yearOptions.map((y) => (
+                <option key={y} value={y}>{formatAcademicYear(y)}</option>
+              ))}
+            </select>
+            <select
+              id="semester"
+              className="form-input"
+              value={semester}
+              onChange={(e) => setSemester(e.target.value)}
+              aria-label="Semester"
+            >
+              <option value="" disabled>Semester</option>
+              {SEMESTERS.map((s) => (
+                <option key={s.value} value={s.value}>{s.label}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+
         {/* Module Code */}
         <div className="form-group">
           <label className="form-label" htmlFor="moduleCode">
             Module Code
             <span className="label-hint">(optional)</span>
           </label>
-          <input
+          <Autocomplete
             id="moduleCode"
-            type="text"
-            className="form-input"
             placeholder="e.g. CS1101S"
             value={moduleCode}
-            onChange={(e) => setModuleCode(e.target.value)}
+            onChange={setModuleCode}
+            fetchSuggestions={searchModules}
+            renderItem={(m) => ({ primary: m.code, secondary: m.title })}
+            onSelect={(m) => setModuleCode(m.code)}
+            minChars={1}
             maxLength={20}
           />
         </div>

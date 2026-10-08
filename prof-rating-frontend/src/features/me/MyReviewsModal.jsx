@@ -4,6 +4,7 @@ import Button from '../../components/Button';
 import Pill from '../../components/Pill';
 import Stars from '../../components/stars';
 import ReviewForm from '../reviews/ReviewForm';
+import { formatTerm } from '../../utils/terms';
 import './MyReviewsModal.css';
 
 function formatDate(iso) {
@@ -31,6 +32,9 @@ function ReviewBody({ review }) {
       <div className="my-review-meta">
         <Stars value={review.rating} size="sm" />
         {review.module_code && <Pill variant="accent" size="sm">{review.module_code}</Pill>}
+        {formatTerm(review.academic_year, review.semester) && (
+          <Pill variant="default" size="sm">{formatTerm(review.academic_year, review.semester)}</Pill>
+        )}
       </div>
       {review.comment
         ? <p className="my-review-comment">{review.comment}</p>

@@ -5,6 +5,7 @@ from sqlalchemy import select, update
 import auth
 from db import SessionLocal
 from tables import LoginCode, Review
+from helpers import TERM
 
 EMAIL = "e1234567@u.nus.edu"
 
@@ -103,7 +104,7 @@ def test_writing_requires_login(anon, client):
     prof = client.post("/professors", json={"name": "Dr. Zeta"}).json()
 
     assert anon.post("/professors", json={"name": "Dr. Eta"}).status_code == 401
-    assert anon.post(f"/professors/{prof['id']}/reviews", json={"rating": 4}).status_code == 401
+    assert anon.post(f"/professors/{prof['id']}/reviews", json={**TERM, "rating": 4}).status_code == 401
     # Reading stays public
     assert anon.get("/professors").status_code == 200
     assert anon.get(f"/professors/{prof['id']}/reviews").status_code == 200
@@ -113,7 +114,7 @@ def test_same_user_can_review_a_professor_many_times_anonymously(client):
     prof = client.post("/professors", json={"name": "Dr. Theta"}).json()
     for rating in (5, 4, 3):
         res = client.post(
-            f"/professors/{prof['id']}/reviews", json={"rating": rating, "module_code": "CS1101S"}
+            f"/professors/{prof['id']}/reviews", json={**TERM, "rating": rating, "module_code": "CS1101S"}
         )
         assert res.status_code == 200
         assert "user_id" not in res.json()

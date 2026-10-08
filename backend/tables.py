@@ -117,6 +117,10 @@ class Review(Base):
     rating: Mapped[int] = mapped_column(SmallInteger)
     module_code: Mapped[Optional[str]] = mapped_column(String(20))
     comment: Mapped[Optional[str]] = mapped_column(Text)
+    # When the student took the class. AY2025/26 Sem 1 -> academic_year=2025, semester=1.
+    # Nullable only because older reviews were written before this was asked; the API requires it.
+    academic_year: Mapped[Optional[int]] = mapped_column(SmallInteger)
+    semester: Mapped[Optional[int]] = mapped_column(SmallInteger)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
@@ -125,6 +129,10 @@ class Review(Base):
 
     __table_args__ = (
         CheckConstraint("rating BETWEEN 1 AND 5", name="ck_reviews_rating_range"),
+        # 1 = Sem 1, 2 = Sem 2, 3 = Special Term 1, 4 = Special Term 2
+        CheckConstraint("semester BETWEEN 1 AND 4", name="ck_reviews_semester_range"),
+        # Both or neither
+        CheckConstraint("(academic_year IS NULL) = (semester IS NULL)", name="ck_reviews_term_complete"),
         # Serves "reviews for professor X, newest first"
         Index("ix_reviews_professor_created", professor_id, created_at.desc()),
     )
@@ -144,6 +152,8 @@ class DeletedReview(Base):
     rating: Mapped[int] = mapped_column(SmallInteger)
     module_code: Mapped[Optional[str]] = mapped_column(String(20))
     comment: Mapped[Optional[str]] = mapped_column(Text)
+    academic_year: Mapped[Optional[int]] = mapped_column(SmallInteger)
+    semester: Mapped[Optional[int]] = mapped_column(SmallInteger)
     original_created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
     deleted_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
@@ -151,3 +161,45 @@ class DeletedReview(Base):
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True)
 
     professor: Mapped[Professor] = relationship()
+
+
+# ---------- Reference data synced from NUSMods (scripts/sync_nus_data.py) ----------
+# Only used for autocomplete suggestions; professors and reviews still accept free text.
+
+
+class Faculty(Base):
+    __tablename__ = "faculties"
+
+    name: Mapped[str] = mapped_column(String(120), primary_key=True)
+    short_name: Mapped[Optional[str]] = mapped_column(String(20))
+
+    __table_args__ = (
+        Index("ix_faculties_name_trgm", name, postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    )
+
+
+class Department(Base):
+    __tablename__ = "departments"
+
+    name: Mapped[str] = mapped_column(String(120), primary_key=True)
+    faculty: Mapped[Optional[str]] = mapped_column(ForeignKey("faculties.name", ondelete="SET NULL"))
+
+    __table_args__ = (
+        Index("ix_departments_name_trgm", name, postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    )
+
+
+class Module(Base):
+    __tablename__ = "modules"
+
+    code: Mapped[str] = mapped_column(String(20), primary_key=True)
+    title: Mapped[str] = mapped_column(String(300))
+    faculty: Mapped[Optional[str]] = mapped_column(String(120))
+    department: Mapped[Optional[str]] = mapped_column(String(120))
+
+    __table_args__ = (
+        # The primary key index can't serve LIKE 'CH%' under a non-C collation;
+        # varchar_pattern_ops makes prefix searches use an index
+        Index("ix_modules_code_prefix", code, postgresql_ops={"code": "varchar_pattern_ops"}),
+        Index("ix_modules_title_trgm", title, postgresql_using="gin", postgresql_ops={"title": "gin_trgm_ops"}),
+    )
