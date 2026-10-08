@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { createProfessor } from '../../api/professors';
 import Button from '../../components/Button';
+import { useAuth } from '../auth/AuthContext';
 import './AddProfessorForm.css';
 
 export default function AddProfessorForm({ onSuccess, onCancel }) {
@@ -9,6 +10,7 @@ export default function AddProfessorForm({ onSuccess, onCancel }) {
   const [faculty, setFaculty] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const { promptLogin } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +36,8 @@ export default function AddProfessorForm({ onSuccess, onCancel }) {
       setFaculty('');
       onSuccess?.(data);
     } catch (err) {
-      setError(err.message);
+      if (err.status === 401) promptLogin();
+      setError(err.status === 401 ? 'Your session expired. Log in, then submit again.' : err.message);
     } finally {
       setLoading(false);
     }

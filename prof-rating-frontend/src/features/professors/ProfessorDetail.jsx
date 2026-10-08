@@ -7,15 +7,17 @@ import Pill from '../../components/Pill';
 import Button from '../../components/Button';
 import ReviewForm from '../reviews/ReviewForm';
 import ReviewList from '../reviews/ReviewList';
+import { useAuth } from '../auth/AuthContext';
 import './ProfessorDetail.css';
 
-export default function ProfessorDetail({ professorId, onClose }) {
+export default function ProfessorDetail({ professorId, onClose, refreshKey = 0, onReviewsChanged }) {
   const [showReviewForm, setShowReviewForm] = useState(false);
+  const { requireLogin } = useAuth();
   const [reloadKey, setReloadKey] = useState(0);
   const [loaded, setLoaded] = useState({ key: null, professor: null, reviews: [] });
 
   // Still loading until the data we hold matches the current request
-  const requestKey = `${professorId}:${reloadKey}`;
+  const requestKey = `${professorId}:${reloadKey}:${refreshKey}`;
   const loading = loaded.key !== requestKey;
   const { professor, reviews } = loaded;
 
@@ -46,6 +48,7 @@ export default function ProfessorDetail({ professorId, onClose }) {
   const handleReviewSubmitted = () => {
     setShowReviewForm(false);
     setReloadKey((k) => k + 1); // Refresh data
+    onReviewsChanged?.(); // Keep the list's rating in sync too
   };
 
   if (!professorId) {
@@ -121,7 +124,7 @@ export default function ProfessorDetail({ professorId, onClose }) {
         <Button 
           variant="primary" 
           fullWidth
-          onClick={() => setShowReviewForm(true)}
+          onClick={() => requireLogin(() => setShowReviewForm(true))}
           icon="✍️"
         >
           Write a Review

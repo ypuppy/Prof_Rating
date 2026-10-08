@@ -4,6 +4,8 @@ import ProfessorList from '../features/professors/ProfessorList';
 import ProfessorDetail from '../features/professors/ProfessorDetail';
 import AddProfessorForm from '../features/professors/AddProfessorForm';
 import Button from '../components/Button';
+import { useAuth } from '../features/auth/AuthContext';
+import MyReviewsModal from '../features/me/MyReviewsModal';
 import './HomePage.css';
 
 // Debounce hook
@@ -24,8 +26,12 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
   const [showAddForm, setShowAddForm] = useState(false);
+  const [showMyReviews, setShowMyReviews] = useState(false);
+  // Bumped whenever reviews change, so the open professor's detail reloads
+  const [dataVersion, setDataVersion] = useState(0);
   
   const debouncedQuery = useDebounce(searchQuery, 300);
+  const { user, checking, requireLogin, logout } = useAuth();
 
   const loadProfessors = useCallback(async (query = '') => {
     setLoading(true);
@@ -42,6 +48,11 @@ export default function HomePage() {
   useEffect(() => {
     loadProfessors(debouncedQuery);
   }, [debouncedQuery, loadProfessors]);
+
+  const handleReviewsChanged = () => {
+    setDataVersion((v) => v + 1);
+    loadProfessors(debouncedQuery);
+  };
 
   const handleCloseDetail = () => {
     setSelectedId(null);
@@ -83,11 +94,22 @@ export default function HomePage() {
             <Button 
               variant="primary" 
               size="sm"
-              onClick={() => setShowAddForm(true)}
+              onClick={() => requireLogin(() => setShowAddForm(true))}
               icon="+"
             >
               Add Professor
             </Button>
+            {!checking && (user ? (
+              <div className="user-menu">
+                <span className="user-email" title={user.email}>{user.email.split('@')[0]}</span>
+                <Button variant="ghost" size="sm" onClick={() => setShowMyReviews(true)}>My Reviews</Button>
+                <Button variant="ghost" size="sm" onClick={logout}>Log out</Button>
+              </div>
+            ) : (
+              <Button variant="secondary" size="sm" onClick={() => requireLogin()}>
+                Log in
+              </Button>
+            ))}
           </div>
         </div>
       </header>
@@ -99,6 +121,22 @@ export default function HomePage() {
             <AddProfessorForm 
               onSuccess={handleProfessorAdded}
               onCancel={() => setShowAddForm(false)}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* My Reviews Modal (closes itself if the user logs out) */}
+      {showMyReviews && user && (
+        <div className="modal-overlay" onClick={() => setShowMyReviews(false)}>
+          <div className="modal-content my-reviews-modal animate-scale-in" onClick={e => e.stopPropagation()}>
+            <MyReviewsModal
+              onClose={() => setShowMyReviews(false)}
+              onSelectProfessor={(id) => {
+                setSelectedId(id);
+                setShowMyReviews(false);
+              }}
+              onChanged={handleReviewsChanged}
             />
           </div>
         </div>
@@ -126,6 +164,8 @@ export default function HomePage() {
             <ProfessorDetail 
               professorId={selectedId}
               onClose={handleCloseDetail}
+              refreshKey={dataVersion}
+              onReviewsChanged={handleReviewsChanged}
             />
           </section>
         </div>
