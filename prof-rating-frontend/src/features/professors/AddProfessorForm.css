@@ -81,3 +81,73 @@
   justify-content: flex-end;
   padding-top: 8px;
 }
+
+/* "Is this the same person?" under the name field */
+.add-professor-form .duplicate-panel {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.add-professor-form .duplicate-panel.is-same {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.add-professor-form .duplicate-title {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.add-professor-form .duplicate-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add-professor-form .duplicate-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+}
+
+.add-professor-form .duplicate-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.add-professor-form .duplicate-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.add-professor-form .duplicate-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.add-professor-form .duplicate-confirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+

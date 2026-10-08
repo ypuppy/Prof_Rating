@@ -80,6 +80,15 @@ docker compose exec db psql -U profrating
 
 Re-run `python scripts/sync_nus_data.py` at the start of each academic year to pick up new modules. It only adds and updates rows, so modules from earlier years stay searchable.
 
+#### Merging duplicate professors
+
+```bash
+python scripts/merge_professors.py --keep 11 --merge 10            # dry run
+python scripts/merge_professors.py --keep 11 --merge 10 --apply    # move reviews to #11, delete #10
+```
+
+Add `--name "..."` to rename the kept professor at the same time. New duplicates are blocked when adding a professor: names that match after removing titles, spaces and case are rejected, and similar names ask the user to confirm.
+
 #### Migrating data from the old MongoDB
 
 ```bash

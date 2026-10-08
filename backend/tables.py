@@ -29,6 +29,8 @@ class Professor(Base):
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(String(120))
+    # names.normalize_name(name): "Dr. Moon-Young Song" -> "moonyoungsong". Set by the app.
+    name_key: Mapped[str] = mapped_column(String(120))
     department: Mapped[Optional[str]] = mapped_column(String(120))
     faculty: Mapped[Optional[str]] = mapped_column(String(120))
     created_at: Mapped[datetime] = mapped_column(
@@ -40,8 +42,15 @@ class Professor(Base):
     )
 
     __table_args__ = (
-        # "Dr. Tan" and "dr. tan" count as the same professor
-        Index("uq_professors_name_lower", func.lower(name), unique=True),
+        # "Dr. Tan Ah Kow", "tan ah kow" and "Prof Tan Ah-Kow" count as the same professor
+        Index("uq_professors_name_key", name_key, unique=True),
+        # Fuzzy "is this the same person?" lookups on the normalised name
+        Index(
+            "ix_professors_name_key_trgm",
+            name_key,
+            postgresql_using="gin",
+            postgresql_ops={"name_key": "gin_trgm_ops"},
+        ),
         # Trigram index so ILIKE '%tan%' searches don't scan the whole table
         Index(
             "ix_professors_name_trgm",

@@ -2,7 +2,7 @@ from typing import Optional
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy import func, select
+from sqlalchemy import case, func, literal, or_, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
@@ -13,6 +13,7 @@ from me import router as me_router
 from me import take_deleted_review
 from reference import router as reference_router
 from models import ProfessorCreate, ReviewCreate
+from names import name_words, normalize_name
 from tables import Module, Professor, Review, User
 
 app = FastAPI()
@@ -87,10 +88,78 @@ def health():
     return {"ok": True, "service": "backend"}
 
 
+# pg_trgm similarity at or above this counts as "maybe the same person".
+# Catches typos (meilinggoh / meilingoh 0.75) and swapped word order on the spaced name
+# (alex lim / lim alex 1.0), but not different people who share a first name (alexlim / alextan 0.33).
+SIMILAR_NAME_THRESHOLD = 0.5
+MIN_PREFIX_LEN = 4  # "moonyoung" vs "moonyoungsong", but not "tan" vs "tanahkow"
+
+
+def find_similar_professors(db: Session, name: str, limit: int = 5) -> list[dict]:
+    """
+    Existing professors who may be the person called `name`, most likely first.
+    match = "same" when the normalised names are identical, otherwise "similar".
+    """
+    key, words = normalize_name(name), name_words(name)
+    if not key:
+        return []
+
+    same = Professor.name_key == key
+    conditions = [
+        same,
+        func.similarity(Professor.name_key, key) >= SIMILAR_NAME_THRESHOLD,
+        # Word-order blind: trigrams are taken per word on the spaced name
+        func.similarity(Professor.name, words) >= SIMILAR_NAME_THRESHOLD,
+    ]
+    if len(key) >= MIN_PREFIX_LEN:
+        conditions += [
+            Professor.name_key.startswith(key),  # typed less than the stored name
+            # typed more than the stored name; keys are [a-z0-9] only, so no LIKE wildcards
+            (literal(key).startswith(Professor.name_key)) & (func.length(Professor.name_key) >= MIN_PREFIX_LEN),
+        ]
+
+    score = func.greatest(func.similarity(Professor.name_key, key), func.similarity(Professor.name, words))
+    stmt = (
+        professors_with_stats()
+        .add_columns(same.label("is_same"))
+        .where(or_(*conditions))
+        .order_by(case((same, 0), else_=1), score.desc(), Professor.name)
+        .limit(limit)
+    )
+    return [
+        {**professor_to_dict(p, avg, count), "match": "same" if is_same else "similar"}
+        for p, avg, count, is_same in db.execute(stmt)
+    ]
+
+
+@app.get("/professors/similar")
+def similar_professors(name: str, db: Session = Depends(get_db)):
+    """Used by the Add Professor form while typing. Declared before /professors/{professor_id}."""
+    return {"items": find_similar_professors(db, name)}
+
+
 @app.post("/professors", dependencies=[Depends(get_current_user)])
 def create_professor(payload: ProfessorCreate, db: Session = Depends(get_db)):
+    name = payload.name.strip()
+    key = normalize_name(name)
+    if not key:
+        raise HTTPException(status_code=422, detail="Name must contain letters or digits")
+
+    similar = find_similar_professors(db, name)
+    if any(s["match"] == "same" for s in similar):
+        raise HTTPException(
+            status_code=409,
+            detail={"message": "This professor is already on ProfRating", "similar": similar},
+        )
+    if similar and not payload.confirm_not_duplicate:
+        raise HTTPException(
+            status_code=409,
+            detail={"message": "There may already be a page for this professor", "similar": similar},
+        )
+
     prof = Professor(
-        name=payload.name.strip(),
+        name=name,
+        name_key=key,
         department=payload.department.strip() if payload.department else None,
         faculty=payload.faculty.strip() if payload.faculty else None,
     )
@@ -98,9 +167,12 @@ def create_professor(payload: ProfessorCreate, db: Session = Depends(get_db)):
     try:
         db.commit()
     except IntegrityError:
-        # uq_professors_name_lower rejected it — no race between "check" and "insert"
+        # uq_professors_name_key: someone added the same name between our check and insert
         db.rollback()
-        raise HTTPException(status_code=409, detail="Professor already exists")
+        raise HTTPException(
+            status_code=409,
+            detail={"message": "This professor is already on ProfRating", "similar": find_similar_professors(db, name)},
+        )
 
     return professor_to_dict(prof)
 

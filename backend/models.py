@@ -7,6 +7,8 @@ class ProfessorCreate(BaseModel):
     name: str = Field(min_length=1, max_length=120)
     department: Optional[str] = Field(default=None, max_length=120)
     faculty: Optional[str] = Field(default=None, max_length=120)
+    # The user saw the "is this the same person?" list and says it's someone else
+    confirm_not_duplicate: bool = False
 
 class ReviewCreate(BaseModel):
     rating: int = Field(ge=1, le=5)
