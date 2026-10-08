@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { createProfessor } from '../../api/professors';
 import Button from '../../components/Button';
+import Autocomplete from '../../components/Autocomplete';
+import { searchDepartments, searchFaculties } from '../../api/reference';
 import { useAuth } from '../auth/AuthContext';
 import './AddProfessorForm.css';
 
@@ -71,13 +73,19 @@ export default function AddProfessorForm({ onSuccess, onCancel }) {
             Department
             <span className="label-hint">(optional)</span>
           </label>
-          <input
+          <Autocomplete
             id="profDept"
-            type="text"
-            className="form-input"
             placeholder="e.g. Computer Science"
             value={department}
-            onChange={(e) => setDepartment(e.target.value)}
+            onChange={setDepartment}
+            fetchSuggestions={(q) => searchDepartments(q, faculty.trim() || undefined)}
+            renderItem={(d) => ({ primary: d.name, secondary: d.faculty })}
+            onSelect={(d) => {
+              setDepartment(d.name);
+              // Picking a department fills in its faculty, unless the user already chose one
+              if (!faculty.trim() && d.faculty) setFaculty(d.faculty);
+            }}
+            maxLength={120}
           />
         </div>
 
@@ -86,13 +94,15 @@ export default function AddProfessorForm({ onSuccess, onCancel }) {
             Faculty
             <span className="label-hint">(optional)</span>
           </label>
-          <input
+          <Autocomplete
             id="profFaculty"
-            type="text"
-            className="form-input"
             placeholder="e.g. School of Computing"
             value={faculty}
-            onChange={(e) => setFaculty(e.target.value)}
+            onChange={setFaculty}
+            fetchSuggestions={searchFaculties}
+            renderItem={(f) => ({ primary: f.name, secondary: f.short_name })}
+            onSelect={(f) => setFaculty(f.name)}
+            maxLength={120}
           />
         </div>
 

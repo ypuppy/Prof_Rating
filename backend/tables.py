@@ -151,3 +151,45 @@ class DeletedReview(Base):
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True)
 
     professor: Mapped[Professor] = relationship()
+
+
+# ---------- Reference data synced from NUSMods (scripts/sync_nus_data.py) ----------
+# Only used for autocomplete suggestions; professors and reviews still accept free text.
+
+
+class Faculty(Base):
+    __tablename__ = "faculties"
+
+    name: Mapped[str] = mapped_column(String(120), primary_key=True)
+    short_name: Mapped[Optional[str]] = mapped_column(String(20))
+
+    __table_args__ = (
+        Index("ix_faculties_name_trgm", name, postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    )
+
+
+class Department(Base):
+    __tablename__ = "departments"
+
+    name: Mapped[str] = mapped_column(String(120), primary_key=True)
+    faculty: Mapped[Optional[str]] = mapped_column(ForeignKey("faculties.name", ondelete="SET NULL"))
+
+    __table_args__ = (
+        Index("ix_departments_name_trgm", name, postgresql_using="gin", postgresql_ops={"name": "gin_trgm_ops"}),
+    )
+
+
+class Module(Base):
+    __tablename__ = "modules"
+
+    code: Mapped[str] = mapped_column(String(20), primary_key=True)
+    title: Mapped[str] = mapped_column(String(300))
+    faculty: Mapped[Optional[str]] = mapped_column(String(120))
+    department: Mapped[Optional[str]] = mapped_column(String(120))
+
+    __table_args__ = (
+        # The primary key index can't serve LIKE 'CH%' under a non-C collation;
+        # varchar_pattern_ops makes prefix searches use an index
+        Index("ix_modules_code_prefix", code, postgresql_ops={"code": "varchar_pattern_ops"}),
+        Index("ix_modules_title_trgm", title, postgresql_using="gin", postgresql_ops={"title": "gin_trgm_ops"}),
+    )

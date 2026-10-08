@@ -56,6 +56,9 @@ pip install -r requirements.txt
 cp .env.example .env
 alembic upgrade head
 
+# Load NUS faculties, departments and module codes for autocomplete (from NUSMods)
+python scripts/sync_nus_data.py
+
 # Run the server
 uvicorn main:app --reload
 ```
@@ -74,6 +77,8 @@ Open a SQL shell on the local database:
 ```bash
 docker compose exec db psql -U profrating
 ```
+
+Re-run `python scripts/sync_nus_data.py` at the start of each academic year to pick up new modules. It only adds and updates rows, so modules from earlier years stay searchable.
 
 #### Migrating data from the old MongoDB
 

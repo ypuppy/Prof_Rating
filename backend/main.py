@@ -11,12 +11,14 @@ from auth import router as auth_router
 from db import get_db
 from me import router as me_router
 from me import take_deleted_review
+from reference import router as reference_router
 from models import ProfessorCreate, ReviewCreate
 from tables import Professor, Review, User
 
 app = FastAPI()
 app.include_router(auth_router)
 app.include_router(me_router)
+app.include_router(reference_router)
 
 app.add_middleware(
     CORSMiddleware,

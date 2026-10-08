@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { createReview } from '../../api/reviews';
 import Stars from '../../components/stars';
 import Button from '../../components/Button';
+import Autocomplete from '../../components/Autocomplete';
+import { searchModules } from '../../api/reference';
 import { useAuth } from '../auth/AuthContext';
 import './ReviewForm.css';
 
@@ -85,13 +87,15 @@ export default function ReviewForm({
             Module Code
             <span className="label-hint">(optional)</span>
           </label>
-          <input
+          <Autocomplete
             id="moduleCode"
-            type="text"
-            className="form-input"
             placeholder="e.g. CS1101S"
             value={moduleCode}
-            onChange={(e) => setModuleCode(e.target.value)}
+            onChange={setModuleCode}
+            fetchSuggestions={searchModules}
+            renderItem={(m) => ({ primary: m.code, secondary: m.title })}
+            onSelect={(m) => setModuleCode(m.code)}
+            minChars={1}
             maxLength={20}
           />
         </div>

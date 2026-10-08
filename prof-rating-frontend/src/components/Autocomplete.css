@@ -1,0 +1,45 @@
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-list {
+  /* Rendered into <body>; top/left/width are set from the input's position */
+  position: fixed;
+  z-index: 1200; /* above every modal overlay */
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.autocomplete-option {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.autocomplete-option.is-active {
+  background: var(--accent-light);
+}
+
+.autocomplete-primary {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.autocomplete-secondary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
