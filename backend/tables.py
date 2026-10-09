@@ -17,6 +17,7 @@ from sqlalchemy import (
     Text,
     func,
 )
+from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
@@ -33,6 +34,10 @@ class Professor(Base):
     name_key: Mapped[str] = mapped_column(String(120))
     department: Mapped[Optional[str]] = mapped_column(String(120))
     faculty: Mapped[Optional[str]] = mapped_column(String(120))
+    # The department website's entry for this person, if we know it. One professor per entry.
+    staff_id: Mapped[Optional[int]] = mapped_column(
+        ForeignKey("staff_directory.id", ondelete="SET NULL"), unique=True
+    )
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
@@ -40,6 +45,7 @@ class Professor(Base):
     reviews: Mapped[list["Review"]] = relationship(
         back_populates="professor", passive_deletes=True
     )
+    staff: Mapped[Optional["StaffMember"]] = relationship()
 
     __table_args__ = (
         # "Dr. Tan Ah Kow", "tan ah kow" and "Prof Tan Ah-Kow" count as the same professor
@@ -212,3 +218,41 @@ class Module(Base):
         Index("ix_modules_code_prefix", code, postgresql_ops={"code": "varchar_pattern_ops"}),
         Index("ix_modules_title_trgm", title, postgresql_using="gin", postgresql_ops={"title": "gin_trgm_ops"}),
     )
+
+
+class StaffMember(Base):
+    """
+    A person listed on a department's "faculty" web page (scripts/import_staff_page.py).
+    Reference data: students search it when adding a professor, and linked professors show it.
+    """
+
+    __tablename__ = "staff_directory"
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(200))
+    name_key: Mapped[str] = mapped_column(String(200))  # names.normalize_name(name)
+    # Text, not String(n): these come from other people's pages, and some titles run long
+    # ("Deputy Head & Senior Lecturer (Joint appointment with ...), Assistant Dean (...)")
+    position: Mapped[Optional[str]] = mapped_column(Text)  # "Assistant Professor"
+    roles: Mapped[list[str]] = mapped_column(ARRAY(Text), server_default="{}")  # "Head of Department", home unit
+    section: Mapped[Optional[str]] = mapped_column(Text)  # "Main Faculty", "Joint Faculty", ...
+    department: Mapped[Optional[str]] = mapped_column(String(120))
+    faculty: Mapped[Optional[str]] = mapped_column(String(120))
+    research_areas: Mapped[Optional[str]] = mapped_column(Text)
+    profile_urls: Mapped[list[str]] = mapped_column(ARRAY(Text), server_default="{}")
+    photo_url: Mapped[Optional[str]] = mapped_column(Text)
+    bio: Mapped[Optional[str]] = mapped_column(Text)
+    source_url: Mapped[str] = mapped_column(Text)  # the page this came from
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+
+    __table_args__ = (
+        # Re-importing a page updates people instead of duplicating them
+        Index("uq_staff_directory_source_name", source_url, name_key, unique=True),
+        Index("ix_staff_directory_name_key_trgm", name_key, postgresql_using="gin",
+              postgresql_ops={"name_key": "gin_trgm_ops"}),
+        Index("ix_staff_directory_name_trgm", name, postgresql_using="gin",
+              postgresql_ops={"name": "gin_trgm_ops"}),
+    )
+

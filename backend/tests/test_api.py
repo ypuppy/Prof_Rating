@@ -64,7 +64,7 @@ def test_detail(client):
     detail = client.get(f"/professors/{p['id']}").json()
     assert detail == {
         "id": p["id"], "name": "Dr. Epsilon", "department": None, "faculty": "SoC",
-        "avg_rating": 4.0, "review_count": 1, "modules": [],
+        "avg_rating": 4.0, "review_count": 1, "modules": [], "staff": None,
     }
     assert client.get("/professors/999").status_code == 404
 

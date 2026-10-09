@@ -8,6 +8,9 @@ python-dotenv==1.2.4
 # Only needed for scripts/migrate_from_mongo.py
 pymongo==4.18.2
 
+# Parsing saved department pages (scripts/import_staff_page.py)
+beautifulsoup4==4.15.0
+
 # Tests
 httpx==0.28.1
 pytest==8.4.2

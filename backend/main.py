@@ -4,7 +4,7 @@ from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import case, func, literal, or_, select
 from sqlalchemy.exc import IntegrityError
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, selectinload
 
 from auth import get_current_user
 from auth import router as auth_router
@@ -12,14 +12,17 @@ from db import get_db
 from me import router as me_router
 from me import take_deleted_review
 from reference import router as reference_router
+from staff import router as staff_router
+from staff import staff_to_dict
 from models import ProfessorCreate, ReviewCreate
 from names import name_words, normalize_name
-from tables import Module, Professor, Review, User
+from tables import Module, Professor, Review, StaffMember, User
 
 app = FastAPI()
 app.include_router(auth_router)
 app.include_router(me_router)
 app.include_router(reference_router)
+app.include_router(staff_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -39,6 +42,8 @@ def professor_to_dict(p: Professor, avg_rating=None, review_count: int = 0) -> d
         "faculty": p.faculty,
         "avg_rating": round(float(avg_rating), 2) if avg_rating is not None else None,
         "review_count": review_count,
+        # From the department website, when this professor is linked to a staff directory entry
+        "staff": staff_to_dict(p.staff) if p.staff else None,
     }
 
 
@@ -65,6 +70,8 @@ def professors_with_stats():
         )
         .outerjoin(Review, Review.professor_id == Professor.id)
         .group_by(Professor.id)
+        # Load linked staff entries in one extra query instead of one per professor
+        .options(selectinload(Professor.staff))
     )
 
 
@@ -145,6 +152,22 @@ def create_professor(payload: ProfessorCreate, db: Session = Depends(get_db)):
     if not key:
         raise HTTPException(status_code=422, detail="Name must contain letters or digits")
 
+    staff = None
+    if payload.staff_id is not None:
+        staff = db.get(StaffMember, payload.staff_id)
+        if staff is None:
+            raise HTTPException(status_code=422, detail="Unknown staff directory entry")
+        linked = db.execute(professors_with_stats().where(Professor.staff_id == staff.id)).first()
+        if linked:
+            p, avg, count = linked
+            raise HTTPException(
+                status_code=409,
+                detail={
+                    "message": "This professor is already on ProfRating",
+                    "similar": [{**professor_to_dict(p, avg, count), "match": "same"}],
+                },
+            )
+
     similar = find_similar_professors(db, name)
     if any(s["match"] == "same" for s in similar):
         raise HTTPException(
@@ -160,8 +183,10 @@ def create_professor(payload: ProfessorCreate, db: Session = Depends(get_db)):
     prof = Professor(
         name=name,
         name_key=key,
-        department=payload.department.strip() if payload.department else None,
-        faculty=payload.faculty.strip() if payload.faculty else None,
+        # Typed values win; otherwise take them from the department website
+        department=(payload.department.strip() if payload.department else None) or (staff and staff.department),
+        faculty=(payload.faculty.strip() if payload.faculty else None) or (staff and staff.faculty),
+        staff=staff,
     )
     db.add(prof)
     try:

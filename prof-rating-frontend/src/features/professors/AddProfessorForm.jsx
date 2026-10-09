@@ -3,6 +3,8 @@ import { createProfessor, findSimilarProfessors } from '../../api/professors';
 import Button from '../../components/Button';
 import Autocomplete from '../../components/Autocomplete';
 import { searchDepartments, searchFaculties } from '../../api/reference';
+import { searchStaff } from '../../api/staff';
+import Avatar from '../../components/Avatar';
 import { useAuth } from '../auth/AuthContext';
 import './AddProfessorForm.css';
 
@@ -18,6 +20,8 @@ export default function AddProfessorForm({ onSuccess, onCancel, onOpenExisting }
   // Existing professors who may be this person, from /professors/similar
   const [similar, setSimilar] = useState([]);
   const [differentPerson, setDifferentPerson] = useState(false);
+  // The department-website entry picked from the name suggestions, if any
+  const [staff, setStaff] = useState(null);
   const checkTimer = useRef(null);
   const latestCheck = useRef(0);
 
@@ -48,7 +52,22 @@ export default function AddProfessorForm({ onSuccess, onCancel, onOpenExisting }
   const handleNameChange = (value) => {
     setName(value);
     setDifferentPerson(false); // a new name needs a new confirmation
+    if (staff && value.trim() !== staff.name) setStaff(null); // edited away from the website's name
     checkName(value);
+  };
+
+  const handlePickStaff = (person) => {
+    if (person.professor_id) {
+      // Already has a page here: go there instead of adding them again
+      onOpenExisting?.(person.professor_id);
+      return;
+    }
+    setStaff(person);
+    setName(person.name);
+    setDepartment(person.department || '');
+    setFaculty(person.faculty || '');
+    setDifferentPerson(false);
+    checkName(person.name);
   };
 
   const handleSubmit = async (e) => {
@@ -68,12 +87,14 @@ export default function AddProfessorForm({ onSuccess, onCancel, onOpenExisting }
         department: department.trim() || null,
         faculty: faculty.trim() || null,
         confirm_not_duplicate: differentPerson,
+        staff_id: staff?.id ?? null,
       });
 
       // Success - clear form and notify parent
       setName('');
       setDepartment('');
       setFaculty('');
+      setStaff(null);
       onSuccess?.(data);
     } catch (err) {
       if (err.status === 401) promptLogin();
@@ -102,15 +123,39 @@ export default function AddProfessorForm({ onSuccess, onCancel, onOpenExisting }
           <label className="form-label" htmlFor="profName">
             Name *
           </label>
-          <input
+          <Autocomplete
             id="profName"
-            type="text"
-            className="form-input"
-            placeholder="e.g. Dr. John Smith"
+            placeholder="Start typing, e.g. Moonyoung Song"
             value={name}
-            onChange={(e) => handleNameChange(e.target.value)}
+            onChange={handleNameChange}
+            fetchSuggestions={searchStaff}
+            renderItem={(p) => ({
+              primary: p.name,
+              secondary: [
+                p.position,
+                p.department,
+                p.professor_id ? 'Already on ProfRating: open page' : null,
+              ].filter(Boolean).join(' · '),
+            })}
+            onSelect={handlePickStaff}
+            minChars={2}
+            maxLength={120}
             autoFocus
           />
+          {staff && (
+            <div className="staff-linked">
+              <Avatar className="staff-linked-avatar" name={staff.name} photoUrl={staff.photo_url} />
+              <span className="staff-linked-text">
+                <span className="staff-linked-title">Linked to the department website</span>
+                <span className="staff-linked-meta">
+                  {[staff.position, staff.department].filter(Boolean).join(' · ')}
+                </span>
+              </span>
+              <button type="button" className="staff-linked-remove" onClick={() => setStaff(null)}>
+                Unlink
+              </button>
+            </div>
+          )}
           {similar.length > 0 && (
             <div className={`duplicate-panel${hasSame ? ' is-same' : ''}`} role="status">
               <p className="duplicate-title">

@@ -9,6 +9,8 @@ class ProfessorCreate(BaseModel):
     faculty: Optional[str] = Field(default=None, max_length=120)
     # The user saw the "is this the same person?" list and says it's someone else
     confirm_not_duplicate: bool = False
+    # Picked from the staff directory search: link the new professor to that entry
+    staff_id: Optional[int] = None
 
 class ReviewCreate(BaseModel):
     rating: int = Field(ge=1, le=5)

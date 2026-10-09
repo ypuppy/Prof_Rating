@@ -6,6 +6,8 @@ import Stars from '../../components/stars';
 import Pill from '../../components/Pill';
 import Button from '../../components/Button';
 import ReviewForm from '../reviews/ReviewForm';
+import Avatar from '../../components/Avatar';
+import StaffInfo from './StaffInfo';
 import ReviewList from '../reviews/ReviewList';
 import { useAuth } from '../auth/AuthContext';
 import './ProfessorDetail.css';
@@ -89,9 +91,7 @@ export default function ProfessorDetail({ professorId, onClose, refreshKey = 0, 
           ✕
         </button>
         
-        <div className="detail-avatar">
-          {professor.name?.charAt(0) || '?'}
-        </div>
+        <Avatar className="detail-avatar" name={professor.name} photoUrl={professor.staff?.photo_url} />
         
         <h1 className="detail-name">{professor.name}</h1>
         
@@ -103,6 +103,8 @@ export default function ProfessorDetail({ professorId, onClose, refreshKey = 0, 
             <Pill variant="default">{professor.faculty}</Pill>
           )}
         </div>
+
+        {professor.staff && <StaffInfo staff={professor.staff} />}
 
         {professor.modules?.length > 0 && (
           <div className="detail-modules">
