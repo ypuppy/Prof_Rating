@@ -80,6 +80,33 @@ docker compose exec db psql -U profrating
 
 Re-run `python scripts/sync_nus_data.py` at the start of each academic year to pick up new modules. It only adds and updates rows, so modules from earlier years stay searchable.
 
+#### Importing department staff lists
+
+Department "faculty" pages (e.g. `https://fass.nus.edu.sg/philo/faculty/`) are behind a CAPTCHA, so they're saved from a real browser where you complete the check yourself, then parsed and imported offline:
+
+```bash
+# 1. Save every FASS department's page (opens a browser; complete any check it shows)
+python scripts/fetch_faculty.py --out data/fass.json            # pages go to data/staff_pages/<code>.html
+
+# 2. Parse the saved pages into people (no network; re-run after improving staff_page.py)
+python scripts/reparse_staff_pages.py                           # -> data/fass_staff.json, with quality checks
+
+# 3. Import into the database
+python scripts/import_staff_page.py --json data/fass_staff.json            # dry run
+python scripts/import_staff_page.py --json data/fass_staff.json --apply
+```
+
+`staff_page.py` recognises five page layouts used by FASS departments (headings, cards, photo columns, table, paragraphs). People appear as suggestions when adding a professor, and linked professors show the website's photo, position, research areas and links. Existing professors with exactly the same name are linked automatically; for similar names the import prints a `scripts/link_professor.py` command to run after checking by hand.
+
+#### Merging duplicate professors
+
+```bash
+python scripts/merge_professors.py --keep 11 --merge 10            # dry run
+python scripts/merge_professors.py --keep 11 --merge 10 --apply    # move reviews to #11, delete #10
+```
+
+Add `--name "..."` to rename the kept professor at the same time. New duplicates are blocked when adding a professor: names that match after removing titles, spaces and case are rejected, and similar names ask the user to confirm.
+
 #### Migrating data from the old MongoDB
 
 ```bash

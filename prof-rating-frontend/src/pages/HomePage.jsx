@@ -121,6 +121,10 @@ export default function HomePage() {
             <AddProfessorForm 
               onSuccess={handleProfessorAdded}
               onCancel={() => setShowAddForm(false)}
+              onOpenExisting={(id) => {
+                setShowAddForm(false);
+                setSelectedId(id);
+              }}
             />
           </div>
         </div>

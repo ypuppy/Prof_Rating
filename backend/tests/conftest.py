@@ -38,7 +38,7 @@ def schema():
 def clean_tables():
     with engine.begin() as conn:
         conn.execute(text(
-            "TRUNCATE deleted_reviews, reviews, professors, sessions, login_codes, users, "
+            "TRUNCATE deleted_reviews, reviews, professors, staff_directory, sessions, login_codes, users, "
             "modules, departments, faculties RESTART IDENTITY CASCADE"
         ))
     yield

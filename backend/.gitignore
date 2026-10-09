@@ -1,3 +1,8 @@
 .venv/
 .env
 __pycache__/
+
+# Saved department pages and crawl reports are local working files;
+# only the parsed staff list is kept in the repo
+data/*
+!data/fass_staff.json

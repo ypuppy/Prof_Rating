@@ -1,10 +1,11 @@
 const API_BASE = import.meta.env.VITE_API_BASE || "/api";
 
-/** Thrown for any non-2xx response; `status` lets callers react to 401 etc. */
+/** Thrown for any non-2xx response; `status` lets callers react to 401 etc., `data` is the response body. */
 export class ApiError extends Error {
-  constructor(message, status) {
+  constructor(message, status, data = null) {
     super(message);
     this.status = status;
+    this.data = data;
   }
 }
 
@@ -28,9 +29,10 @@ export async function request(path, { method = "GET", body, params } = {}) {
 
   const data = await res.json().catch(() => null);
   if (!res.ok) {
-    // FastAPI validation errors put a list in `detail`; show the first message
-    const detail = Array.isArray(data?.detail) ? data.detail[0]?.msg : data?.detail;
-    throw new ApiError(detail || `Request failed (${res.status})`, res.status);
+    // FastAPI validation errors put a list in `detail`; some of our errors put an object with `message`
+    const raw = data?.detail;
+    const detail = Array.isArray(raw) ? raw[0]?.msg : typeof raw === "object" && raw ? raw.message : raw;
+    throw new ApiError(detail || `Request failed (${res.status})`, res.status, data);
   }
   return data;
 }

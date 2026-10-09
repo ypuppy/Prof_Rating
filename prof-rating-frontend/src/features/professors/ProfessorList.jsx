@@ -1,6 +1,7 @@
 import Card from '../../components/Card';
 import Stars from '../../components/stars';
 import Pill from '../../components/Pill';
+import Avatar from '../../components/Avatar';
 import './ProfessorList.css';
 
 export default function ProfessorList({ 
@@ -43,12 +44,16 @@ export default function ProfessorList({
           >
             <div className="professor-card-content">
               <div className="professor-info">
-                <div className="professor-avatar">
-                  {professor.name?.charAt(0) || '?'}
-                </div>
+                <Avatar className="professor-avatar" name={professor.name} photoUrl={professor.staff?.photo_url} />
                 <div className="professor-details">
                   <h3 className="professor-name">{professor.name}</h3>
                   <p className="professor-meta">
+                    {professor.staff?.position && (
+                      <>
+                        {professor.staff.position}
+                        <span className="meta-separator">·</span>
+                      </>
+                    )}
                     {professor.department || 'Unknown Department'}
                     {professor.faculty && (
                       <span className="meta-separator">·</span>
