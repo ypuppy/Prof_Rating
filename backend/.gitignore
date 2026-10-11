@@ -3,6 +3,7 @@
 __pycache__/
 
 # Saved department pages and crawl reports are local working files;
-# only the parsed staff list is kept in the repo
+# only the parsed staff lists are kept in the repo
 data/*
 !data/fass_staff.json
+!data/biz_staff.json

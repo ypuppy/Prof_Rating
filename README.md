@@ -98,6 +98,39 @@ python scripts/import_staff_page.py --json data/fass_staff.json --apply
 
 `staff_page.py` recognises five page layouts used by FASS departments (headings, cards, photo columns, table, paragraphs). People appear as suggestions when adding a professor, and linked professors show the website's photo, position, research areas and links. Existing professors with exactly the same name are linked automatically; for similar names the import prints a `scripts/link_professor.py` command to run after checking by hand.
 
+#### BIZ faculty directory
+
+For BIZ, use its separate paginated directory workflow (commands from `backend/`):
+
+```bash
+source .venv-homework/bin/activate
+python -m pip install playwright beautifulsoup4
+python -m playwright install chromium
+python scripts/fetch_biz_faculty.py                     # all departments discovered from the site
+python scripts/fetch_biz_faculty.py --department 4      # optional: one department only
+python scripts/reparse_biz_staff_pages.py               # offline; no additional website requests
+```
+
+The fetcher saves `data/biz_staff_pages/biz-<id>-page-<n>.html`, a crawl report
+in `data/biz.json`, and personnel in `data/biz_staff.json`. Department IDs and
+pagination links come from the website; IDs need not be consecutive. Personnel
+use the same eight fields as the FASS export. Research areas and biographies are
+`null` because the directory does not provide them; individual profiles and CVs
+are not fetched. Hidden screen-reader text is excluded.
+
+Zero people, missing positions, unrecognised cards, or repeated pages are
+reported as `parse_failed`, preserve HTML, and stop requests for that department.
+`failed` means loading failed. Both appear in the summary and give exit code 2;
+partial people may be present, so check department statuses before importing.
+Use offline reparse after adjusting the parser. The HTML parser still needs
+verification against a saved live BIZ page if website verification blocks the run.
+
+Run BIZ-only checks without starting a database:
+
+```bash
+python -m unittest discover -s scripts/tests
+```
+
 #### Merging duplicate professors
 
 ```bash

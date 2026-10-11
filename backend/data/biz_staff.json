@@ -1,0 +1,3361 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-11T05:10:57.090941+00:00",
+  "completed": true,
+  "departments": [
+    {
+      "code": "biz-1",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=1",
+      "department": "Accounting",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "Chan Deon",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/PoFJQ1536290165-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chng Chee Kiong",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/358"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/4_CheeKiong-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chua Kim Chiu",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7733"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/5_kimchiu-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Du Mengqiao",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22567"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/DU_Mengqiao.jpg",
+          "bio": null
+        },
+        {
+          "name": "Foo Annette",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/F3ipH1536288688-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Gefen Ofir",
+          "position": "Visiting Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27148-ofir-gefen"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/OfirGefen200.png",
+          "bio": null
+        },
+        {
+          "name": "Ho Tuck Chuen",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/HO-Tuck-Chuen-270.png",
+          "bio": null
+        },
+        {
+          "name": "Jang Hansol",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20465"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/6_hansol-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jiang Shushu",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22568"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/JIANG_Shushu.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ke Bin",
+          "position": "Provost's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6143"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/7_kebin-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Kusnadi Hanny",
+          "position": "Academic Director, The NUS MSc (Accounting) Programme · Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18315"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/10/Hanny-Kusnadi-2023-Profile-Pic-270x270.jpeg",
+          "bio": null
+        },
+        {
+          "name": "Kwok Chee Chiu Winston",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/385"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/9_winston-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Li Oliver Zhen",
+          "position": "Provost's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2925"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/oliver-zhen-li-270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lim Joo Boon",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/JGDTg1536289979-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lin Yupeng",
+          "position": "Assistant Dean (Research & PhD) · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7533"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/10_LinYupeng-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Liu Yibin",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20470"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/11_yibin-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lynn Stephen Gregory",
+          "position": "Deputy Head of Department (Accounting) · Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1786"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/2_stephen-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Mak Yuen Teen",
+          "position": "Director, Centre for Investor Protection (CIP) · Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/553"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/13_yuenteen-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Poh Simon",
+          "position": "Associate Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1415"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/14_simon-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Potter Iain",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Ug8fN1660198724-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Punjabi Sanjna",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/xm7le1574234412.jpg",
+          "bio": null
+        },
+        {
+          "name": "Rabetti Daniel",
+          "position": "S. Dhanabalan Chair in Quantitative Studies · PYP Assistant Professor (Courtesy Appointment with Department of Finance)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24895"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/DanielRabetti.png",
+          "bio": null
+        },
+        {
+          "name": "Reeb David M",
+          "position": "Head of Department (Accounting) · Mr & Mrs Lin Jo Yan Professor in Banking and Finance · Professor · Professor ( Department of Finance)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3160"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/david-reeb-270.jpg",
+          "bio": null
+        },
+        {
+          "name": "See Tho Soat Ching",
+          "position": "Vice Dean (Undergraduate Studies) · Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/4369"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/16_susan-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "She Guoman",
+          "position": "Dean's Chair · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29352-guoman-she/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/06/Guoman-SHE.png",
+          "bio": null
+        },
+        {
+          "name": "Shin Sa-Pyung Sean",
+          "position": "Academic Director, The NUS MSc (Management and CEMS MIM) Programme · Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20476"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Sean_Shin_270.png",
+          "bio": null
+        },
+        {
+          "name": "TAY Puay Hui",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/08/Tay-Puay-Hui.png",
+          "bio": null
+        },
+        {
+          "name": "Wang Yingfei Fiona",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18307"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/20_fiona-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wang Linghuan Lynn",
+          "position": "Dean's Chair · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29498"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/08/Lynn-Wang.png",
+          "bio": null
+        },
+        {
+          "name": "Yan Jiawen",
+          "position": "PYP Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29497"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/08/Yan-Jiawen.png",
+          "bio": null
+        },
+        {
+          "name": "Yu Enshuai",
+          "position": "PYP Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/31765"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/07/Enshuai-Yu.png",
+          "bio": null
+        },
+        {
+          "name": "Zeng Jieyin Jean",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18111"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/22_jean-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhang Xi Rachel",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20464"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/23_rachel-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zuo Luo",
+          "position": "Provost's Chair · Professor · Professor (Courtesy Appointment with Department of Finance)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24557"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Zuo_Luo_270-1.png",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 34,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=1",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=1",
+            "count": 14,
+            "heading_count": 14,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 100,
+        "profile_urls_pct": 79,
+        "research_areas_pct": 0
+      }
+    },
+    {
+      "code": "biz-2",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=2",
+      "department": "Analytics and Operations",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "AFANASYEV Maxim",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/31771"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/08/MA270.png",
+          "bio": null
+        },
+        {
+          "name": "Ang James",
+          "position": "(Honorary Fellowship)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/352"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ANG-James-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "ANG Eugene Teng Yen",
+          "position": "Adjunct Instructor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/30013"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/08/Ang-Teng-Yen-Eugene.png",
+          "bio": null
+        },
+        {
+          "name": "Au Yang Sian",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/25085"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/AU-Yan-Siang-270.png",
+          "bio": null
+        },
+        {
+          "name": "Balkrishnan Natarajan",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/900"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/BALKHRISHNAN_Natarajan_270.png",
+          "bio": null
+        },
+        {
+          "name": "Candogan Sidika",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/23059"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Sidika-Candogan-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Capri Alexander",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6363-alexander-capri"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Alex-Capri.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chen Huaxing",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/13674"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHEN_Huaxing_270.png",
+          "bio": null
+        },
+        {
+          "name": "CHEN Jeremy",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/10747-jeremy-chen"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHENJeremy_270.png",
+          "bio": null
+        },
+        {
+          "name": "Chen Kim Heng",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/16350-kim-heng-chen"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHEN-Kim-Heng-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chen Lucy Gongtao",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1486"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Chen-Lucy-Gongtao-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chen Zhi",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18314"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHEN-Zhi-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chou Mabel",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/906"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/gK3cr1663573493-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chu Singfat",
+          "position": "(Honorary Fellowship)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/428-singfat-chuchunlin"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHU-Singfat-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Feng Yifan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18316-yifan-feng"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/FENG-Yifan-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Goh Han Leong",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/23442-han-leong-goh"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/GHL-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Goh Joel",
+          "position": "Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1865-joel-goh"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/GOH-Joel-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Goh Mark",
+          "position": "Director (Industry Research), The Logistics Institute-Asia Pacific (TLI-AP) · Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/315-keng-hock-mark-goh"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/GOH-Mark-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Goh Puay Guan",
+          "position": "Academic Director, The NUS MSc (Smart Industries and Digital Transformation) · Associate Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3123-puay-guan-goh/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/GOH-Puay-Guan-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Goh Shao Hung",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22883"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/VTEpq1662346355-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Guo Lei",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/19573"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/GUO_Lei_270.png",
+          "bio": null
+        },
+        {
+          "name": "He Shuangchi",
+          "position": "Associate Professor (Courtesy)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3032-shuangchi-he/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/he-shuangchi-270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Hu Zhenyu",
+          "position": "Associate Professor and Dean's Chair",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6275-zhenyu-hu"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/HU-Zhenyu-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "HUANG Bin",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20579"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/08/Huang-Bin.png",
+          "bio": null
+        },
+        {
+          "name": "Hum Sin Hoon",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/138-sin-hoon-hum/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/hum-sin-hoon-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Hwarng Brian",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/444"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/brian-hwarng-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Keppo Jussi",
+          "position": "Head of Department (Analytics & Operations) · Research Director, Institute of Operations Research and Analytics (IORA) · Provost's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3644"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Jussi-Keppo.png",
+          "bio": null
+        },
+        {
+          "name": "Kumar Sachin",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "KURZ Andreas",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/08/Kurz-Andreas.png",
+          "bio": null
+        },
+        {
+          "name": "Li Joel Bingrui",
+          "position": "Adjunct Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22873"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/nWiOH1672108044-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Light Bar",
+          "position": "Assistant Professor (Presidential Young Professorship)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27432-bar-light/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/BAR.png",
+          "bio": null
+        },
+        {
+          "name": "Lim Andrew",
+          "position": "Professor · Professor (Department of Finance)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3815"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/LIM-Andrew-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIM Ek Hong",
+          "position": "Adjunct Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20881"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/08/Lim-Ek-Hong.png",
+          "bio": null
+        },
+        {
+          "name": "Liu Qizhang",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1534"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/LIU-Qizhang-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Loh Tick Kwang",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29536"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/01/Loh-Tick-Kwang.png",
+          "bio": null
+        },
+        {
+          "name": "Pang Yan James",
+          "position": "Co-Director, NUS Business Analytics Centre · Assistant Dean (Industry Relations) and Dean's Fellow · Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/10509"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/PANG-YAN-James-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "QUEK Khor Ping",
+          "position": "Visiting Senior Fellow",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/10940"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/QUEK-Khor-Ping-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Quek Ser Aik",
+          "position": "(Honorary Fellowship)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/268"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/QUEK-Ser-Aik-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Schwinn Roland",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27491"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/01/Schwinn-Roland.png",
+          "bio": null
+        },
+        {
+          "name": "Sharma Pavan",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20582-pavan-sharma"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/hKT391662370412-270x270.png",
+          "bio": null
+        },
+        {
+          "name": "Sim Melvyn",
+          "position": "Provost's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/768"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/SIM-Melvyn-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Sun Jie",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/471"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/SUN-Jie-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Hong Ming",
+          "position": "Deputy Head of Department (Analytics & Operations) · Senior Lecturer (Educator Track) · Assistant Dean (Digital Operations)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20583-hong-ming-tan"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/TanHongMing1-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tan Kok Choon",
+          "position": "Deputy Director, Centre for Maritime Studies · Co-Director, MSc (Supply Chain Management) Programme · Associate Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/940"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/TAN-Kok-Choon-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tan Ryan Run Yan",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/23732"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/04oIM1675846479-240x270.jpeg",
+          "bio": null
+        },
+        {
+          "name": "Teo Chung Piaw",
+          "position": "Dean, NUS Business School · Stephen Riady Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/412-chung-piaw-teo"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/TEO-Chung-Piaw-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Teo Thompson",
+          "position": "Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/334"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/TEO-Thompson-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Trinh Tam",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22592-tam-trinh"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/rLysc1658802880-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tung Yi-Liang",
+          "position": "Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/4606"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/TUNG-Yi-Liang-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wu Yaozhong",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1319-yaozhong-wu/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/WU-Yaozhong-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Xiong Peng",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/11338"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/XIONG-Peng-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhang Hanqin",
+          "position": "Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1846"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ZHANG-Hanqin-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhao Long",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15851-long-zhao"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ZHAO-Long-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zheng Peng",
+          "position": "Adjunct Instructor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/19838-peng-zheng"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/YAIe61662360255-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhu Ian Yihang",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24826"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Ian-Zhu-270-270x270-1.png",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 55,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=2",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=2",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/3/?dept=2",
+            "count": 15,
+            "heading_count": 15,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 98,
+        "profile_urls_pct": 96,
+        "research_areas_pct": 0
+      }
+    },
+    {
+      "code": "biz-3",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=3",
+      "department": "Finance",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "Chen Renbao",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/508"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHEN_Ren_Bao_270.png",
+          "bio": null
+        },
+        {
+          "name": "Cheng James",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/5423"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHENG_Kuang_Kuo_James.png",
+          "bio": null
+        },
+        {
+          "name": "Dimmock Stephen",
+          "position": "Provost's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18090"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/DIMMOCK_Stephen_270.png",
+          "bio": null
+        },
+        {
+          "name": "Duan Jin-Chuan",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1483"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/DUAN_Jin_Chuan_270.png",
+          "bio": null
+        },
+        {
+          "name": "Eng Siang Yang, Veronica",
+          "position": "Practice Professor (Part Time)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/5735"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/8q9ut1634270054.jpg",
+          "bio": null
+        },
+        {
+          "name": "Fazio Dimas",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18308"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/tIOYR1606454452-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Hameed Allaudeen",
+          "position": "Tang Peng Yeu Professor in Finance · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/220"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/tSf721518158830-3-e1708868200533-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "HRNJIC Emir",
+          "position": "Academic Director, UCLA-NUS Executive MBA Programme · Head of FinTech Training, Asian Institute of Digital Finance (AIDF) · Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1458"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/HRNJIC_Emir_270.png",
+          "bio": null
+        },
+        {
+          "name": "Huszar Zsuzsa Reka",
+          "position": "Adjunct Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/14633"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/HUSZAR_Reka_270.png",
+          "bio": null
+        },
+        {
+          "name": "Ilhan Emirhan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22793"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/a2y521665458761-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Kabir Poorya",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18110"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/wQ7w11606454494-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lam Swee Sum",
+          "position": "Honorary Fellow",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/173"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/LAM_Swee_Sum_270.png",
+          "bio": null
+        },
+        {
+          "name": "Lee David",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15907"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/LEE_David_270.png",
+          "bio": null
+        },
+        {
+          "name": "Lee Hon Sing",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2088-hon-sing-lee/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/LEE_Hon_SIN_270.png",
+          "bio": null
+        },
+        {
+          "name": "Lee Yen Teik",
+          "position": "Deputy Academic Director of Executive MBA (Chinese) Program · Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18324"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/LEE_YenTeik_270.png",
+          "bio": null
+        },
+        {
+          "name": "Low Aaron",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/796"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/NZvKT1535014595.jpg",
+          "bio": null
+        },
+        {
+          "name": "Low Winston",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/19389"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/XTyO61535011980-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Low Chee Kiat",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/14980"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/04/LowCheeKiat.jpeg",
+          "bio": null
+        },
+        {
+          "name": "Muller Karsten",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20638"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/uZnCT1623138642.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ong Daniel",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/5208"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ONG_Daniel.png",
+          "bio": null
+        },
+        {
+          "name": "Qian Wenlan",
+          "position": "Director of the NUS Institute of Real Estate and Urban Studies (IREUS) · Ng Teng Fong Chair Professor in Real Estate · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1752-wenlan-qian"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/QIAN_Wen_Lan_270.png",
+          "bio": null
+        },
+        {
+          "name": "Rose Andrew Kenan",
+          "position": "Distinguished Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15577"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/01GDF1559283457-3-e1708789149688-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Sarkar Arkodipta",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22792"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/ORnD71658818824.jpg",
+          "bio": null
+        },
+        {
+          "name": "Srinivasan Anand",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1148"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/SRINIVASAN_Anand_270.png",
+          "bio": null
+        },
+        {
+          "name": "Sulaeman Deserina",
+          "position": "Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/17994"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/SULAEMAN_Deserina_270.png",
+          "bio": null
+        },
+        {
+          "name": "Sulaeman Johan",
+          "position": "Director, Sustainable and Green Finance Institute (SGFIN) · Director, PhD DFT Programme, Asian Institute of Digital Finance (AIDF) · Academic Director, the NUS MSc (Finance) Programme · Dean's Chair · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/5231"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/KjlX91606455229-1-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tan Lorna",
+          "position": "Adjunct Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15832"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/lorna-tan.jpeg",
+          "bio": null
+        },
+        {
+          "name": "Tan Seow Kuan, Ruth",
+          "position": "Deputy Head of Department (Finance) · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/183"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/TAN_Ruth_270.png",
+          "bio": null
+        },
+        {
+          "name": "Teo Ted",
+          "position": "Adjunct Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/10771"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/JuLkk1647240805-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wiwattanakantang Yupana",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2503"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Wiwattanakantang_Yupana_270.png",
+          "bio": null
+        },
+        {
+          "name": "Wong Nai Seng",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/14662"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/6YpGO1547631522-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yee Doris",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/4206-dai-nee-doris-yee"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/Doris-Yee.jpeg",
+          "bio": null
+        },
+        {
+          "name": "Yeo Wee Yong",
+          "position": "Academic Director, The NUS MSc (Finance) Programme · Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/740"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/9iNE31606454715-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yeung Bernard",
+          "position": "Emeritus Professor · Emeritus Professor (Department of Strategy & Policy)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1754"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/JVO8L1593132272-270x270.png",
+          "bio": null
+        },
+        {
+          "name": "Yue Ling",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7790"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/bXlac1606455271-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zahalka Jumana",
+          "position": "Deputy Dean · Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2149-jumana-zahalka/teaching"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ZAHALKA_Jumana_270.png",
+          "bio": null
+        },
+        {
+          "name": "ZALDOKAS ALMINAS",
+          "position": "Associate Professor · Dean Chair",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/26072"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/tPcir1705911234.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhang Weina",
+          "position": "Deputy Director, Sustainable and Green Finance Institute (SGFIN) · Academic Director, the NUS MSc (Sustainable and Green Finance) Programme · Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/800"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/yeLsP1616050308-1-270x270.jpg",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 38,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=3",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=3",
+            "count": 18,
+            "heading_count": 18,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 100,
+        "profile_urls_pct": 100,
+        "research_areas_pct": 0
+      }
+    },
+    {
+      "code": "biz-4",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=4",
+      "department": "Management and Organisation",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "Cha Virginia",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6018"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/arkcy1600742670-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chao Ta-Wei",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "CHEAH Lai Yin Sarah",
+          "position": "Associate Professor (Practice Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/4518-lai-yin-sarah-cheah/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Sarah-Cheah-270x270-1.png",
+          "bio": null
+        },
+        {
+          "name": "Chee Mew Leng",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/326-mew-leng-chee/teaching"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Mew-Leng-Chee-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chen Anjier",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18148-anjier-chen/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Anjier-Chen-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chia Audrey",
+          "position": "Associate Professor (Educator Track) · Associate Professor (Courtesy Appointment with Yong Loo Lin School of Medicine) · Deputy Chair, MSc Environmental Management, SCALE",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/292-wai-yin-audrey-chia"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/AudreyChia.jpg",
+          "bio": null
+        },
+        {
+          "name": "Daniels David Peter",
+          "position": "Presidential Young Professor · Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18305"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/David-Daniels-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "David Emily M.",
+          "position": "Academic Director, The MBA Programme · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24788"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/5cVs51695286954.png",
+          "bio": null
+        },
+        {
+          "name": "HE Tianyu",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/21760-he-tianyu/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/r5O411642587026-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Hsieh Tsun-Yan",
+          "position": "Professor (Practice)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2846"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/08/Hsieh-Tsun-Yan-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "HUANG Hsuan-Che Brad",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/31523-hsuanche-@-huang-brad-huang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/07/HUANG-Hsuan-Che-Brad-270.png",
+          "bio": null
+        },
+        {
+          "name": "ILIES Remus",
+          "position": "Visiting Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Remus-Ilies-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "JENKINS Michael",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Kakkar Hemant",
+          "position": "Dean's Chair · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/31641-hemant-kakkar"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/07/KAKKAR-Hemant-270.png",
+          "bio": null
+        },
+        {
+          "name": "KARPE Sandhya",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Kaur Ameek",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18731-ameek-kaur/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ameekweb.png",
+          "bio": null
+        },
+        {
+          "name": "Krishnamurth Sriram Iyer",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Li Zixin Lambert",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29225-lambert-zixin-li"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/05/LI-Lambert.png",
+          "bio": null
+        },
+        {
+          "name": "Lim Ghee Soon",
+          "position": "Deputy Head of Department (Management & Organisations) · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/264"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Ghee-Soon-Lim-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIM Sandy",
+          "position": "Associate Provost (Special Projects) · Associate Professor · Associate Professor (Courtesy Appointment with Department of Psychology, FASS)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1751-sandy-lim"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Sandy-Lim-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIM Wai Yeen Isaac",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Lowe Joo Yong",
+          "position": "Senior Lecturer · On Leave",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/670-joo-yong-lowe/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/jooyong1-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Mcallister Daniel J",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/955-daniel-j-mcallister"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Daniel-J-Macallister.png",
+          "bio": null
+        },
+        {
+          "name": "MICHAUD Stephane",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "MITSUI Yoshiharu",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Nosworthy Glenn J",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/NOSWORTHY_270.png",
+          "bio": null
+        },
+        {
+          "name": "Skulkerewathana Usa",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/594"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Usa-Skulkerewathana-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Song Zhaoli",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1098-zhaoli-song/teaching"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Song-Zhaoli-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Stanley Matthew L",
+          "position": "Presidential Young Professor · Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29378-matthew-lawrence-stanley"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/06/Stanley_thumbnail.png",
+          "bio": null
+        },
+        {
+          "name": "Tan Noriko",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18566-noriko-tan"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Noriko-Tan.png",
+          "bio": null
+        },
+        {
+          "name": "Tong Yew Kwan",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Wang Ningxin",
+          "position": "Academic Director, The MSc (Human Capital Management and Analytics) Programme · Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/17403-ningxin-wang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Wang-Ningxin-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wu Pei Chuan",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/769-pei-chuan-wu"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/rECuf1665632830.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yam Sam",
+          "position": "Head of Department (Management & Organisation) · Jardine Cycle & Carriage Professor of Business Administration",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6130-kai-chi-yam/teaching"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Yam-Sam-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "YANG Bu Deul Elisabeth",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/31648-bu-deul-yang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/07/YANG-Bu-Deul-Elisabeth-270.png",
+          "bio": null
+        },
+        {
+          "name": "Young Henry R.",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27451"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/09/objectimage.png",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 36,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=4",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=4",
+            "count": 16,
+            "heading_count": 16,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 78,
+        "profile_urls_pct": 72,
+        "research_areas_pct": 0
+      }
+    },
+    {
+      "code": "biz-5",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=5",
+      "department": "Marketing",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "Ang Swee Hoon",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/192"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/3iNtJ1604025655-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Deolankar Varad Vivek",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29502"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/07/Photo-Varad-Thumb.png",
+          "bio": null
+        },
+        {
+          "name": "Grice Richard",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27316-richard-grice"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/WebsitePhoto-Richard.png",
+          "bio": null
+        },
+        {
+          "name": "Hajjar Samer",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/20472"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/098U11625118270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Huang David Ta-Wei",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29496-david-tawei-huang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/07/Photo-David-Thumb.png",
+          "bio": null
+        },
+        {
+          "name": "Kim Dayoung",
+          "position": "Co-Academic Director, MSc (Marketing Analytics and Insights) · Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/16058"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/7Kzo81693963086.png",
+          "bio": null
+        },
+        {
+          "name": "Kim Min",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18306"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/ZP9dx1604026095-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Kum Doreen",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3812"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/g4Mod1604026140-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lee Leonard",
+          "position": "Director, Lloyd's Register Foundation Institute for the Public Understanding of Risk · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/5333-leonard-lee"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/pOg2j1604025629-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lee Yih Hwai",
+          "position": "Co-Academic Director, MSc (Marketing Analytics and Insights) · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/486"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/qX3gp1604026172-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Li Xiuping",
+          "position": "Deputy Head of Department (Marketing) · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1277"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/lMjB61604026201-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lim Noah",
+          "position": "Head of Department (Marketing) · Director, Global Asia Institute · Provost's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/4966"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/oIqEL1604025513-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Overton Graham",
+          "position": "Visiting Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27318-graham-n-overton"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/08/WebsitePhoto-Graham.png",
+          "bio": null
+        },
+        {
+          "name": "Shamdasani Prem",
+          "position": "Academic Director, The NUS Executive MBA · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/193"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/n1sJ81604026371-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tambyah Siok Kuan (on sabbatical)",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/443"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/CVbQe1604026424-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tan Soo Jiuan",
+          "position": "Honorary Fellowship",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/209"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/59SEd1604026746-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Teng Fei",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/29499-fei-teng"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/07/Fei-Teng-Thumb.png",
+          "bio": null
+        },
+        {
+          "name": "Wang Jane Jiaqian",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27118-jane-jiaqian-wang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/Jane-270.png",
+          "bio": null
+        },
+        {
+          "name": "Weaver Ian",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24671"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/aOPdO1693963051.png",
+          "bio": null
+        },
+        {
+          "name": "Wirtz Jochen",
+          "position": "Vice Dean, MBA Programmes · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/455"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/02/WutDj1604026479-3-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhang Yan",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1968"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/DhHr61604026717-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Zhu Yuting",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22569"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Photo-Yuting-Website-10-1-270x270.jpg",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 22,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=5",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=5",
+            "count": 2,
+            "heading_count": 2,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 100,
+        "profile_urls_pct": 100,
+        "research_areas_pct": 0
+      }
+    },
+    {
+      "code": "biz-6",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=6",
+      "department": "Strategy and Policy",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "ABRAMS Douglas",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/912-douglas-keith-abrams/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ABRAMS_Douglas_270.png",
+          "bio": null
+        },
+        {
+          "name": "Adbi Arzi",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/17978"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/ADBI-Arzi-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Azmy Wade",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22838-wade-azmy"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/wade_azmy.png",
+          "bio": null
+        },
+        {
+          "name": "BRIGGS Jonathan",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24070-jonathan-harland-briggs"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/HHSMb1681173815-270x270.png",
+          "bio": null
+        },
+        {
+          "name": "Cai Daolu",
+          "position": "Academic Director, MSc in Strategic Analysis and Innovation · Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/17360-daolu-cai"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/4vNWN1585541087-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chandran Ravi S/o Thiagarajah",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/459"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/CHANDRANRavi-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chang Sea Jin",
+          "position": "Head of Department (Strategy & Policy) · Lim Kim San Chair Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1925"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Chang-Sea-Jin-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHAU Wilton Chi Wai",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/12785-chi-wai-chau"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/kPBAq1695113425-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Delios Andrew",
+          "position": "Vice Dean, MSc Programmes Office · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/870-andrew-karl-delios/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/M5Vn61495439624-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Fu Qiang",
+          "position": "Professor · Academic Director, The NUS Executive MBA (Chinese) · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1168-qiang-fu"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/FU-QIANG-270x270-1.png",
+          "bio": null
+        },
+        {
+          "name": "Gan Kian Lee, Mark",
+          "position": "Instructor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2915-kian-lee-mark-gan"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/kian-lee-mark-gan.jpg",
+          "bio": null
+        },
+        {
+          "name": "GREENE Laina",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7331-laina-raveendran-greene"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/KD2yn1452908123.jpg",
+          "bio": null
+        },
+        {
+          "name": "Hon Mun YIP",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/10/YIP-Hon-Mun.png",
+          "bio": null
+        },
+        {
+          "name": "Huan Julie",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3071-julie-liyueh-huan"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Julie-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Huang Kenneth Guang-Lih",
+          "position": "Associate Professor (Courtesy Appointment with Department of Strategy and Policy)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7073-kenneth-guanglih-huang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/HUANG-Kenneth-Guang-Lih-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jain Amit",
+          "position": "Associate Professor · Assistant Professor, Industrial Systems Engineering and Management, CDE",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2025-amit-jain"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/jainamit-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jo Seung-Gyu",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2680-seunggyu-jo"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Joseunggyu-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Kon Sen Choeng",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/25525-sen-choeng-kon"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/UhfeG1695363125.png",
+          "bio": null
+        },
+        {
+          "name": "Lai Wai Kit",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/11757-wai-kit-lai"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/lB1NL1708052069-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lee Kwok Hao",
+          "position": "Postdoctoral Fellow",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24637"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/tHM211687325597-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Leong Chung Wei Bernard",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/23630-chung-wei-bernard-leong/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/fj4cB1675395055.jpg",
+          "bio": null
+        },
+        {
+          "name": "Leong Huey Sy, Susanna",
+          "position": "Vice-Provost (Lifelong Education) · Professor · Vice-Dean (Graduate Studies)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/401-huey-sy-susanna-leong"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/LEONGSusanna-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Li Jamber Jian Bai",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7986-jianbai-li"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/JamberLi-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Loh Lawrence",
+          "position": "Deputy Head of Department (Strategy & Policy) · Director, Centre for Governance and Sustainability · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/228-lawrence-loh/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/sszOl1646137124-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Mahmood Ishtiaq P",
+          "position": "Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/678"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Prof-Pasha.png",
+          "bio": null
+        },
+        {
+          "name": "MOMIN Zafar Abdulmajid",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24075"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/t9dRw1676267540.jpg",
+          "bio": null
+        },
+        {
+          "name": "Nadkarni Shivendu",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15978-nadkarni-shivendu-shashikant/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Nadkarni_Shivendu_270.png",
+          "bio": null
+        },
+        {
+          "name": "Nair Su-Ann",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/21812-suann-nair"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/08/suann-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Natarajan Sharmita",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15882-mita-natarajan"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/08/NATARAJAN-Sharmita.png",
+          "bio": null
+        },
+        {
+          "name": "Ng Weiyi",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/10609-weiyi-ng"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Prv4Q1566439837-264x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ong Pinchuan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18069-pinchuan-ong/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/OngPinChuan-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Pan Julian",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22593"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/I0uMv1657616535-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Pangarkar Nitin",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/503"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Mf2Lv1617010105.jpg",
+          "bio": null
+        },
+        {
+          "name": "PARK Geunyong",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/24711-geunyong-park"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/MIp2G1688972451-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Park Sanghyun",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/27008-sanghyun-park"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/10/Park-Sanghyun.png",
+          "bio": null
+        },
+        {
+          "name": "Png Ivan P.L.",
+          "position": "Distinguished Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/552"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/IvanPng-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Quah Siew Heng",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/11693"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/j4A6K1494574717.jpg",
+          "bio": null
+        },
+        {
+          "name": "Santamaria Simone",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15927-simone-santamaria/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/06/Simone-Santamaria.png",
+          "bio": null
+        },
+        {
+          "name": "Sharma S",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/wT9Y81470105779-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "SIDDIQI Lutfey Yasser",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/2932-lutfey-yasser-siddiqi"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/6XsS01673833451.png",
+          "bio": null
+        },
+        {
+          "name": "Singh Kulwant",
+          "position": "Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/303-kulwant-singh"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Kulwant-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Soh Daniel",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Fol4R1701059729-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Sudan Sabina",
+          "position": "Adjunct Senior Lecturer · Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/8619"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/07/sabina-sudan.jpeg",
+          "bio": null
+        },
+        {
+          "name": "Tang Lisa",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/18015-lisa-xiaolu-tang"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Lisa-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wee Chui Neo, Janet",
+          "position": "Adjunct Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/14840-chui-neo-janet-wee"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/geN3M1555578154-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wong Poh Kam",
+          "position": "Emeritus Professor, NUS Business School · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/306-poh-kam-wong/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/10/Wong-Poh-Kam.jpeg",
+          "bio": null
+        },
+        {
+          "name": "XING Damien",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/26063"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/Damien-XIng300-270x270-1.png",
+          "bio": null
+        },
+        {
+          "name": "Xu Le",
+          "position": "Lecturer · Instructor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3033-le-xu/"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/XuLe-270x270-1.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yong Titus",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15945-titus-yong"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/H4VTq1564043596-270x270.png",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 49,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=6",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=6",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/3/?dept=6",
+            "count": 9,
+            "heading_count": 9,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 100,
+        "profile_urls_pct": 94,
+        "research_areas_pct": 0
+      }
+    },
+    {
+      "code": "biz-14",
+      "faculty": "NUS Business School",
+      "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=14",
+      "department": "Real Estate",
+      "status": "success",
+      "layout": "biz-directory",
+      "people": [
+        {
+          "name": "Agarwal Sumit",
+          "position": "Head of Department (Real Estate) · President, Asian Bureau of Finance and Economic Research (ABFER) · Managing Director, Sustainable and Green Finance Institute (SGFIN) · Low Tuck Kwong Distinguished Professor · Professor (Department of Finance)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3391"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/bCSKL1606455831-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Badarinza Cristian",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6220"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/S99KR1623734187.jpg",
+          "bio": null
+        },
+        {
+          "name": "Biljecki Filip",
+          "position": "Presidential Young Professor · Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/11005"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/eWLkc1618215532.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chen Helen",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/9372-helen-chen/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/aQAp01625804588-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Chia Liu Ee",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/11465"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/08/Chia-Liu-Ee-270.png",
+          "bio": null
+        },
+        {
+          "name": "Choo Kian Koon Steven",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3713-kian-koon-steven-choo"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/IVmeM1625805798.jpg",
+          "bio": null
+        },
+        {
+          "name": "Christudason Alice",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/176"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/gnwDK1623734278.jpg",
+          "bio": null
+        },
+        {
+          "name": "FAN Mingxuan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15958-mingxuan-fan/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/mingxuan_270.png",
+          "bio": null
+        },
+        {
+          "name": "Fan Yi",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/6283"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/XmxT11626071335.jpg",
+          "bio": null
+        },
+        {
+          "name": "Fu Yuming",
+          "position": "Associate Professor · Academic Director (BSc Real Estate)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/905-yuming-fu"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/CVInE1623734101.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ibrahim Muhammad Faishal bin Ibrahim",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/564"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/nUo8T1624430576.jpg",
+          "bio": null
+        },
+        {
+          "name": "Kwang Heng Lee",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/17421"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/10/photo.png",
+          "bio": null
+        },
+        {
+          "name": "Lee Kwan Ok",
+          "position": "Deputy Head of Department (Real Estate) · Professor · Dean's Chair",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/3104"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/lee-kwan-ok-270.jpg",
+          "bio": null
+        },
+        {
+          "name": "LI Zhonglin",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/22573-zhonglin-li/about"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/q1kQr1657257401.jpg",
+          "bio": null
+        },
+        {
+          "name": "Liao Wen-Chi",
+          "position": "Assistant Dean (Undergraduate Academic) · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/1480"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/e06Et1623734124.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lum Sau Kim",
+          "position": "Associate Vice President of NUS Global Relations Office · Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/312-sau-kim-lum"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/dmZ1z1623734136.jpg",
+          "bio": null
+        },
+        {
+          "name": "MAK Moo Theng",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/28528"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2025/01/MMT-20231204-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ong Seow Eng",
+          "position": "Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/432"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/OeAqY1623734075.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ooi Joseph",
+          "position": "Professor · Co-Director of Institute of Real Estate and Urban Studies (IREUS), NUS",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/509"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/wyxsX1624430543.jpg",
+          "bio": null
+        },
+        {
+          "name": "Qin Yu",
+          "position": "Dean's Chair · Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/5053"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/09/qin-yu-270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Seah Sky Kiat Ying",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/689"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/YgIQi1701067239-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Seek Ngee Huat",
+          "position": "Provost’s Chair Professor (Practice)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/7674"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2026/09/DrSeek_200x200.png",
+          "bio": null
+        },
+        {
+          "name": "Sing Tien Foo",
+          "position": "Professor · Provost's Chair · Academic Director, MSc in Real Estate",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/708"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/v0elQ1625106308.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tan Poh Hong",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/13328"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/SNSSr1625804775-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tay Kah Poh",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/17462-kah-poh-tay"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/BExzV1625804634.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tu Yong",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/698"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/5hgEm1623734161.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wang Xize",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/15785"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/taKYG1705460847-270x270.jpg",
+          "bio": null
+        },
+        {
+          "name": "Wong Khei Mie, Grace",
+          "position": "Senior Lecturer",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/335"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/5Wv0v1623734296.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yu Shi-Ming",
+          "position": "Honorary Fellow · Associate Professor · Academic Director (MSc Real Estate)",
+          "roles": [],
+          "section": null,
+          "research_areas": null,
+          "profile_urls": [
+            "https://discovery.nus.edu.sg/335"
+          ],
+          "photo_url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/oDPLf1623734173.jpg",
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 29,
+        "errors": [],
+        "pages": [
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/?dept=14",
+            "count": 20,
+            "heading_count": 20,
+            "errors": []
+          },
+          {
+            "url": "https://bizfaculty.nus.edu.sg/faculty-directory/page/2/?dept=14",
+            "count": 9,
+            "heading_count": 9,
+            "errors": []
+          }
+        ],
+        "position_pct": 100,
+        "photo_url_pct": 100,
+        "profile_urls_pct": 100,
+        "research_areas_pct": 0
+      }
+    }
+  ],
+  "summary": {
+    "success": 7,
+    "failed": 0,
+    "parse_failed": 0,
+    "pending": 0
+  }
+}
