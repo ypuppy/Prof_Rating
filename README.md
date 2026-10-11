@@ -131,6 +131,25 @@ Run BIZ-only checks without starting a database:
 python -m unittest discover -s scripts/tests
 ```
 
+#### SoC people pages
+
+Computer Science and Information Systems and Analytics each have one people page
+(`https://www.comp.nus.edu.sg/cs/people/`, `/disa/people/`). They are AngularJS
+apps: everyone is embedded in the HTML as JavaScript arrays (`$scope.allStaffs = [...]`),
+so `soc_staff_page.py` reads those arrays from the saved HTML; there is no pagination.
+
+```bash
+python scripts/fetch_soc_faculty.py                         # both departments
+python scripts/fetch_soc_faculty.py --department soc-cs     # optional: one only
+python scripts/reparse_soc_staff_pages.py                   # offline, after changing the parser
+python scripts/import_staff_page.py --json data/soc_staff.json            # dry run
+python scripts/import_staff_page.py --json data/soc_staff.json --apply
+```
+
+Faculty, teaching staff, adjunct/visiting faculty and courtesy appointments are kept, each with
+its page section; research staff and the admin/area-leader lists (repeats of faculty) are not.
+Emails (shown as images), offices and phone numbers are not kept.
+
 #### Merging duplicate professors
 
 ```bash

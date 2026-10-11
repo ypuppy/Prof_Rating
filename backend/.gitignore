@@ -7,3 +7,4 @@ __pycache__/
 data/*
 !data/fass_staff.json
 !data/biz_staff.json
+!data/soc_staff.json
