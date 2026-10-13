@@ -131,6 +131,61 @@ Run BIZ-only checks without starting a database:
 python -m unittest discover -s scripts/tests
 ```
 
+#### SoC people pages
+
+Computer Science and Information Systems and Analytics each have one people page
+(`https://www.comp.nus.edu.sg/cs/people/`, `/disa/people/`). They are AngularJS
+apps: everyone is embedded in the HTML as JavaScript arrays (`$scope.allStaffs = [...]`),
+so `soc_staff_page.py` reads those arrays from the saved HTML; there is no pagination.
+
+```bash
+python scripts/fetch_soc_faculty.py                         # both departments
+python scripts/fetch_soc_faculty.py --department soc-cs     # optional: one only
+python scripts/reparse_soc_staff_pages.py                   # offline, after changing the parser
+python scripts/import_staff_page.py --json data/soc_staff.json            # dry run
+python scripts/import_staff_page.py --json data/soc_staff.json --apply
+```
+
+Faculty, teaching staff, adjunct/visiting faculty and courtesy appointments are kept, each with
+its page section; research staff and the admin/area-leader lists (repeats of faculty) are not.
+Emails (shown as images), offices and phone numbers are not kept.
+
+#### CDE faculty directory
+
+From `backend/`, using the same Playwright/BeautifulSoup environment:
+
+```bash
+python scripts/fetch_cde_faculty.py --department me       # start with one department
+python scripts/fetch_cde_faculty.py                       # configured SOURCE: all ten departments
+python scripts/reparse_cde_staff_pages.py                 # offline reparse, no website requests
+```
+
+Sources live in `cde_staff_page.py`. The fetcher writes HTML under
+`data/cde_staff_pages/`, crawl records to `data/cde.json`, and personnel to
+`data/cde_staff.json`. It follows actual pagination links with their filters,
+supports both `/page/2/` and `?paged=2`, and combines multiple category pages per
+department. Duplicate people across categories are merged; repeated pages within
+the same list scope are errors. Parsing failures preserve HTML and stop requests
+for that department. The offline reparser checks that configured entries and
+linked pages have saved HTML before marking a department successful.
+
+CDE departments use several page templates. `cde_staff_page.py` has one small reader per
+template, chosen by `detect_layout()` from the page's markup (`LAYOUTS`):
+
+| Layout | Used by |
+|---|---|
+| `ws-people` (`.ws-people-content` cards) | ME, MSE, ChBE, BME, CEE, ECE, Design full-time/adjunct, ISEM faculty |
+| `profile-wrapper` | Architecture (also lists admin staff, filtered by title) |
+| `heading-columns` (name/title/email `h2`s per column) | Built Environment |
+| `name-table` (Name / Staff Title table) | Design part-time and teaching staff |
+| `rank-tables` (one table per rank heading) | ISEM adjunct |
+| `person-cells` (one person per table cell) | ISEM teaching support |
+
+A page matching none is `unknown layout` (`parse_failed`); add a reader for the new template.
+Every card is either kept or excluded (administrative staff on mixed pages, research staff), and
+`cards == kept + excluded` is checked so a skipped card is an error. All titles are kept in the
+site's order. Emails, phones and CV PDFs are not kept; profile pages are not visited.
+
 #### Merging duplicate professors
 
 ```bash

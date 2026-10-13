@@ -1,0 +1,3153 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-11T06:47:03.235305+00:00",
+  "completed": true,
+  "departments": [
+    {
+      "code": "soc-cs",
+      "department": "Computer Science",
+      "faculty": "School of Computing",
+      "url": "https://www.comp.nus.edu.sg/cs/people/",
+      "status": "success",
+      "layout": "soc-angular",
+      "people": [
+        {
+          "name": "AI Xin",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/aixin"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/aixin.jpg",
+          "bio": null
+        },
+        {
+          "name": "Abhik ROYCHOUDHURY",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Security",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/abhik"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/abhik.jpg",
+          "bio": null
+        },
+        {
+          "name": "Adi Yoga Sidi PRABAWA",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/adi-yoga"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/adi-yoga.jpg",
+          "bio": null
+        },
+        {
+          "name": "Akshay NARAYAN",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [
+            "Assistant Dean (Undergraduate Student Affairs), Student Life"
+          ],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/anarayan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/anarayan.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ambuj VARSHNEY",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ambuj"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ambuj.jpg",
+          "bio": null
+        },
+        {
+          "name": "Amirhassan MONAJEMI",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Media, Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/amir"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/amir.jpg",
+          "bio": null
+        },
+        {
+          "name": "Anand BHOJAN",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking, Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/bhojan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/bhojan.jpg",
+          "bio": null
+        },
+        {
+          "name": "Anandha GOPALAN",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/axgopala"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/axgopala.jpg",
+          "bio": null
+        },
+        {
+          "name": "Angela YAO",
+          "position": "Dean's Chair Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ayao"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ayao.jpg",
+          "bio": null
+        },
+        {
+          "name": "Anis Bin Yusof",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/anis"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sample1.png",
+          "bio": null
+        },
+        {
+          "name": "Anji LIU",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/liuaj"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/liuaj.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ashish Deepak DANDEKAR",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ashishd"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ashishd.jpg",
+          "bio": null
+        },
+        {
+          "name": "BIAN Yatao",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/bianyt"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/bianyt.jpg",
+          "bio": null
+        },
+        {
+          "name": "BRESSON Xavier",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/xaviercs"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/xaviercs.jpg",
+          "bio": null
+        },
+        {
+          "name": "Bimlesh WADHWA",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [
+            "Vice-Dean, Student Life"
+          ],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/bimlesh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/bimlesh.jpg",
+          "bio": null
+        },
+        {
+          "name": "Boyd ANDERSON",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [
+            "Associate Dean, Student Conduct"
+          ],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/boyd"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/boyd.jpg",
+          "bio": null
+        },
+        {
+          "name": "Brian LIM Youliang",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/brianlim"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/brianlim.jpg",
+          "bio": null
+        },
+        {
+          "name": "Bryan HOOI Kuen-Yew",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/bhooi"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/bhooi.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHAN Chee Yong",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/chancy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chancy.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHAN Mun Choon",
+          "position": "Professor",
+          "roles": [
+            "Vice-Dean, Graduate Studies"
+          ],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/chanmc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chanmc.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHANG Ee-Chien",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/changec"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/changec.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHEN Tsuhan",
+          "position": "Distinguished Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tsuhan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tsuhan.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHEN Yu",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/cheny"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/cheny.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHENG Holun",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/hcheng"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/hcheng.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHIA Wai Kit, Henry",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/hchia"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/hchia.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHIN Wei Ngan",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/chinwn"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chinwn.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHONG Ket Fah",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/chongket"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chongket.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHUA Tat Seng",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/chuats"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chuats.jpg",
+          "bio": null
+        },
+        {
+          "name": "Christian VON DER WETH",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/chris"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chris.jpg",
+          "bio": null
+        },
+        {
+          "name": "Conghui HU",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/huch"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/huch.jpg",
+          "bio": null
+        },
+        {
+          "name": "Cristina CARBUNARU",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [
+            "Assistant Dean (Graduate Student Affairs and Alumni), Student Life"
+          ],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ccris"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ccris.jpg",
+          "bio": null
+        },
+        {
+          "name": "DONG Jin Song",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/dongjs"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/dongjs.jpg",
+          "bio": null
+        },
+        {
+          "name": "DUAN Jiafei",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/duanjf"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/duanjf.jpg",
+          "bio": null
+        },
+        {
+          "name": "Damith Chatura RAJAPAKSE",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [
+            "Deputy Head (Teaching), Department Of Computer Science"
+          ],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/damithch"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/damithch.jpg",
+          "bio": null
+        },
+        {
+          "name": "Daren LER",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/dler"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/dler.jpg",
+          "bio": null
+        },
+        {
+          "name": "David HSU",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/dyhsu"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/dyhsu.jpg",
+          "bio": null
+        },
+        {
+          "name": "David KOH",
+          "position": "Honorary Professor (Practice Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/dkoh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sample1.png",
+          "bio": null
+        },
+        {
+          "name": "Diptarka CHAKRABORTY",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/diptarka"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/diptarka.jpg",
+          "bio": null
+        },
+        {
+          "name": "Divesh AGGARWAL",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/divesh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/divesh.jpg",
+          "bio": null
+        },
+        {
+          "name": "Eldon CHUNG",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/echu21"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/echu21.jpg",
+          "bio": null
+        },
+        {
+          "name": "Eric ANSCHUETZ",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/e-ans"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/e-ans.jpg",
+          "bio": null
+        },
+        {
+          "name": "Flavien Robert Remy SOLT",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/flavien"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/flavien.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ganesh NEELAKANTA IYER",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/gni"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/gni.jpg",
+          "bio": null
+        },
+        {
+          "name": "HAN Liang Wee Eric",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ehan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ehan.jpg",
+          "bio": null
+        },
+        {
+          "name": "HE Bingsheng",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Database, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/hebs"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/hebs.jpg",
+          "bio": null
+        },
+        {
+          "name": "HENZ, Martin J",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/henz"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/henz.jpg",
+          "bio": null
+        },
+        {
+          "name": "HSU Wynne",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/whsu"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/whsu.jpg",
+          "bio": null
+        },
+        {
+          "name": "HUANG Zhiyong",
+          "position": "Associate Professor (Practice Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/huangzy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/huangzy.jpg",
+          "bio": null
+        },
+        {
+          "name": "Harold SOH Soon Hong",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/hsoh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/hsoh.jpg",
+          "bio": null
+        },
+        {
+          "name": "Ilya SERGEY",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Systems & Networking, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ilya"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ilya.jpg",
+          "bio": null
+        },
+        {
+          "name": "JAIN, Sanjay",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/sanjay"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sanjay.jpg",
+          "bio": null
+        },
+        {
+          "name": "JIANG KAN",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/jiangkan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/jiangkan.jpg",
+          "bio": null
+        },
+        {
+          "name": "JIANG Wenqi",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Database, Systems & Networking, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/jiangwq"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/jiangwq.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jane E",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ejane"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ejane.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jialin LI",
+          "position": "Sung Kah Kay Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/lijl"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lijl.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jingxian WANG",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking, Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/wangjx"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wangjx.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jithin VACHERY",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Computational Social Science, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/jithin"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/jithin.jpg",
+          "bio": null
+        },
+        {
+          "name": "John KALLAUGHER",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/johnk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/johnk.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jonathan SCARLETT",
+          "position": "Associate Professor",
+          "roles": [
+            "Assistant Dean (PhD), Graduate Studies"
+          ],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/scarlett"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/scarlett.jpg",
+          "bio": null
+        },
+        {
+          "name": "Joxan JAFFAR",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/joxan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/joxan.jpg",
+          "bio": null
+        },
+        {
+          "name": "KAN Min-Yen",
+          "position": "Associate Professor",
+          "roles": [
+            "Vice-Dean, Undergraduate Studies"
+          ],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/kanmy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/kanmy.jpg",
+          "bio": null
+        },
+        {
+          "name": "KANKANHALLI Mohan",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Security",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/mohan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/mohan.jpg",
+          "bio": null
+        },
+        {
+          "name": "KHOO Siau Cheng",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/khoosc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/khoosc.jpg",
+          "bio": null
+        },
+        {
+          "name": "Kenji KAWAGUCHI",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/kenji"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/kenji.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEE Gim Hee",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leegh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leegh.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEE Mong Li Janice",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Computational Biology, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leeml"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leeml.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEE Wee Sun",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leews"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leews.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEE Yi-Chieh",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence, Healthcare Informatics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/yclee"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/yclee.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEONG Hon Wai",
+          "position": "Honorary Fellow",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Computational Biology",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leonghw"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leonghw.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEONG Tze Yun",
+          "position": "Professor (Practice Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leongty"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leongty.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEONG Wai Kay",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leongwai"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leongwai.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEONG Wing Lup, Ben",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/bleong"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/bleong.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEOW Wee Kheng",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leowwk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leowwk.jpg",
+          "bio": null
+        },
+        {
+          "name": "LI Wei",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/weili"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/weili.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIANG Zhenkai",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/liangzk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/liangzk.jpg",
+          "bio": null
+        },
+        {
+          "name": "LING Chun Kai",
+          "position": "Sung Kah Kay Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/lingck"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lingck.jpg",
+          "bio": null
+        },
+        {
+          "name": "LING Tok Wang",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/lingtw"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lingtw.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIU Yuejiang",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/liuyj"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/liuyj.jpg",
+          "bio": null
+        },
+        {
+          "name": "LOW Kian Hsiang",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/lowkh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lowkh.jpg",
+          "bio": null
+        },
+        {
+          "name": "LOW Kok Lim",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/lowkl"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lowkl.jpg",
+          "bio": null
+        },
+        {
+          "name": "LU Yao",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Database, Systems & Networking, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/luyao"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/luyao.jpg",
+          "bio": null
+        },
+        {
+          "name": "Lin SHAO",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/shaol"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/shaol.jpg",
+          "bio": null
+        },
+        {
+          "name": "MA Tianbai, Richard",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tbma"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tbma.jpg",
+          "bio": null
+        },
+        {
+          "name": "Manuel RIGGER",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Database, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/rigger"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/rigger.jpg",
+          "bio": null
+        },
+        {
+          "name": "Michael D. ADAMS",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/adams"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/adams.jpg",
+          "bio": null
+        },
+        {
+          "name": "Mike SHOU",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/mikeshou"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/mikeshou.jpg",
+          "bio": null
+        },
+        {
+          "name": "Muhammad Rizki Aulia Rahman MAULANA",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/maulana"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/maulana.jpg",
+          "bio": null
+        },
+        {
+          "name": "NG Hwee Tou",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/nght"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/nght.jpg",
+          "bio": null
+        },
+        {
+          "name": "NG See Kiong",
+          "position": "Professor (Practice Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Computational Biology",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ngsk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ngsk.jpg",
+          "bio": null
+        },
+        {
+          "name": "NG Teck Khim",
+          "position": "Associate Professor (Practice Track)",
+          "roles": [
+            "Vice-Dean, Lifelong Education"
+          ],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ngtk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ngtk.jpg",
+          "bio": null
+        },
+        {
+          "name": "Nitya.Lakshmanan",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/nityalak"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/nityalak.jpg",
+          "bio": null
+        },
+        {
+          "name": "OOI Wei Tsang",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ooiwt"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ooiwt.jpg",
+          "bio": null
+        },
+        {
+          "name": "Olivier DANVY",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/olivier"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/olivier.jpg",
+          "bio": null
+        },
+        {
+          "name": "PEH Li Shiuan",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/peh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/peh.jpg",
+          "bio": null
+        },
+        {
+          "name": "Patrick REBENTROST",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/patrick"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/patrick.jpg",
+          "bio": null
+        },
+        {
+          "name": "Prabhu NATARAJAN",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/prabhu"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/prabhu.jpg",
+          "bio": null
+        },
+        {
+          "name": "Prasanna Karthik VAIRAM",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/prasanna"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/prasanna.jpg",
+          "bio": null
+        },
+        {
+          "name": "Prashant Nalini VASUDEVAN",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Security",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/prashant"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/prashant.jpg",
+          "bio": null
+        },
+        {
+          "name": "Prateek SAXENA",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking, Security, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/prateeks"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/prateeks.jpg",
+          "bio": null
+        },
+        {
+          "name": "QUEK Yihui",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/quekyh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sample1.png",
+          "bio": null
+        },
+        {
+          "name": "Qizhe XIE",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/mshieh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/mshieh.jpg",
+          "bio": null
+        },
+        {
+          "name": "Rahul JAIN",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/rahul"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/rahul.jpg",
+          "bio": null
+        },
+        {
+          "name": "Rajendra Prasad SIRIGINA",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/srprasad"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/srprasad.jpg",
+          "bio": null
+        },
+        {
+          "name": "Reza SHOKRI",
+          "position": "Dean's Chair Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Artificial Intelligence, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/reza"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/reza.jpg",
+          "bio": null
+        },
+        {
+          "name": "Roger ZIMMERMANN",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/rogerz"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/rogerz.jpg",
+          "bio": null
+        },
+        {
+          "name": "Rucha Ravi KULKARNI",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/rucha"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sample1.png",
+          "bio": null
+        },
+        {
+          "name": "SIM Mong Cheng Terence",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Artificial Intelligence, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tsim"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tsim.jpg",
+          "bio": null
+        },
+        {
+          "name": "SOO Yuen Jien",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/sooyj"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sooyj.jpg",
+          "bio": null
+        },
+        {
+          "name": "STEPHAN, Frank Christian",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/fstephan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/fstephan.jpg",
+          "bio": null
+        },
+        {
+          "name": "Sanka RASNAYAKA",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/sanka"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sanka.jpg",
+          "bio": null
+        },
+        {
+          "name": "Seth Lewis GILBERT",
+          "position": "Professor",
+          "roles": [
+            "Head, Department Of Computer Science"
+          ],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/gilbert"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/gilbert.jpg",
+          "bio": null
+        },
+        {
+          "name": "Sriram SAMI",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking, Security",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/srirams"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/srirams.jpg",
+          "bio": null
+        },
+        {
+          "name": "Steven HALIM",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/stevenha"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/stevenha.jpg",
+          "bio": null
+        },
+        {
+          "name": "Suranga NANAYAKKARA",
+          "position": "Associate Professor",
+          "roles": [
+            "Vice-Dean, Communications"
+          ],
+          "section": "Faculty",
+          "research_areas": "Intelligent Systems, Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/suranga"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/suranga.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Keng Yan, Colin",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [
+            "Assistant Dean (Outreach), Communications"
+          ],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ctank"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ctank.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Kian Lee",
+          "position": "Tan Sri Runme Shaw Senior Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Computational Biology, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tankl"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tankl.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Soon Huat Gary",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/gtan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/gtan.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Sun Teck",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tanst"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tanst.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Tiow Seng",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tants"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tants.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Tuck Choy",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [
+            "Assistant Dean (Advisement), Undergraduate Studies"
+          ],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tantc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tantc.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Zhi Xuan",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Programming Languages & Software Engineering",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tanzx"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tanzx.jpg",
+          "bio": null
+        },
+        {
+          "name": "TUNG Kum Hoe Anthony",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/atung"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/atung.jpg",
+          "bio": null
+        },
+        {
+          "name": "Trevor E. CARLSON",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tcarlson"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tcarlson.jpg",
+          "bio": null
+        },
+        {
+          "name": "Tulika MITRA",
+          "position": "Provost's Chair Professor",
+          "roles": [
+            "Dean, Dean's Office"
+          ],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tulika"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tulika.jpg",
+          "bio": null
+        },
+        {
+          "name": "Umang MATHUR",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/umathur"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/umathur.jpg",
+          "bio": null
+        },
+        {
+          "name": "Vivy SUHENDRA",
+          "position": "Associate Professor (Practice Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/vivy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/vivy.jpg",
+          "bio": null
+        },
+        {
+          "name": "WANG Bohan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/wangbh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wangbh.jpg",
+          "bio": null
+        },
+        {
+          "name": "WANG Chengpeng",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Programming Languages & Software Engineering, Security, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/wangcp"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wangcp.jpg",
+          "bio": null
+        },
+        {
+          "name": "WANG Ye",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/wangye"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wangye.jpg",
+          "bio": null
+        },
+        {
+          "name": "WONG Lim Soon",
+          "position": "KITHCT Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Computational Biology, Algorithms & Theory, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/wongls"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wongls.jpg",
+          "bio": null
+        },
+        {
+          "name": "Warut SUKSOMPONG",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/warut"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/warut.jpg",
+          "bio": null
+        },
+        {
+          "name": "Weng-Fai WONG",
+          "position": "Associate Professor",
+          "roles": [
+            "Associate Dean (Admissions), Admissions"
+          ],
+          "section": "Faculty",
+          "research_areas": "Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/wongwf"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wongwf.jpg",
+          "bio": null
+        },
+        {
+          "name": "XIAO Jiancong",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/xiaojc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/xiaojc.jpg",
+          "bio": null
+        },
+        {
+          "name": "Xiaokui XIAO",
+          "position": "Professor",
+          "roles": [
+            "Vice-Dean, Research"
+          ],
+          "section": "Faculty",
+          "research_areas": "Database, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/xiaoxk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/xiaoxk.jpg",
+          "bio": null
+        },
+        {
+          "name": "Y.C. TAY",
+          "position": "Emeritus Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Systems & Networking, Database",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/tayyc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tayyc.jpg",
+          "bio": null
+        },
+        {
+          "name": "YAN Shuicheng",
+          "position": "Distinguished Professor (Practice Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Media, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/yansc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/yansc.jpg",
+          "bio": null
+        },
+        {
+          "name": "YAP Hock Chuan, Roland",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Security, Programming Languages & Software Engineering, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/ryap"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ryap.jpg",
+          "bio": null
+        },
+        {
+          "name": "YU Haifeng",
+          "position": "Dean's Chair Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Algorithms & Theory, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/yuhf"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/yuhf.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yang YOU",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Artificial Intelligence, Systems & Networking",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/youy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/youy.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yang ZHANG",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Computational Biology, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/zhangy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/zhangy.jpg",
+          "bio": null
+        },
+        {
+          "name": "Yi-Jun CHANG",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/changyj"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/changyj.jpg",
+          "bio": null
+        },
+        {
+          "name": "ZHANG Jiaheng",
+          "position": "NUS Presidential Young Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Security, Artificial Intelligence, Algorithms & Theory",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/zhangjh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/zhangjh.jpg",
+          "bio": null
+        },
+        {
+          "name": "ZHANG Yuxuan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Algorithms & Theory, Artificial Intelligence",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/zhangyx"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/zhangyx.jpg",
+          "bio": null
+        },
+        {
+          "name": "ZHAO Jin",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [
+            "Assistant Dean (Enrichment), Undergraduate Studies"
+          ],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/zhaojin"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/zhaojin.jpg",
+          "bio": null
+        },
+        {
+          "name": "ZHOU Lifeng",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/zhoulife"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/zhoulife.jpg",
+          "bio": null
+        },
+        {
+          "name": "Gizem BALIKCI",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Rajarshi BASU",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "CHEONG Sze Kai, Brian",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Ivan Chew TECK MENG",
+          "position": "Part-Time Tutor",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "CHOW Yuan Bin",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "FOO Yong Qi",
+          "position": "Instructor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "GAN Kah Ee",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Gary GOH Yipeng",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "HENG Hian Wee",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Rajdeep Singh HUNDAL",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Enzio KAM Hai Hong",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Kitahara YUTARO",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LAU Chee Loong, Desmond",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Theodore LEEBRANT",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Chun Tze, Eldric LIEW",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Jing Yu LIM",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "MA Yuan",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "NG Tzer Bin",
+          "position": "Teaching Assistant",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Nicholas NGE Jing Shou",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "NGO Ngoc Phuong Uyen",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "NGUYEN Tien Khoa",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Biswadeep SEN",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "SHEN Jiamin",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "SONG Kai",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Jeanette",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "TAN Yugin",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Tanya WARRIER",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Alvin YAN Hong Yao",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Nishita AGARWAL",
+          "position": "Adjunct Senior Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/nishita"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Hugh ANDERSON",
+          "position": "Visiting Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/hugh"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "BANERJEE Suman",
+          "position": "KITHCT Visiting Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/banerjee"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Vincent David BONNET",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/bonnet"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Lawrence CARIN",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/lcarin"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Nancy Fang Yih CHEN",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/nchen"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "VASSILIS CHRISTOPHIDES",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/vassilis"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Christophe JOUFFRAIS",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/jouffrai"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Peter Rowan KELLOCK",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/kellock"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LEE Hwee Kuan",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/leehk"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "NIOW Choon Hock",
+          "position": "Adjunct Senior Research Fellow",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Nay OO",
+          "position": "Adjunct Senior Research Fellow",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "PIRK Holger",
+          "position": "Visiting Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/pirk"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Anders Jacobsen SKANDERUP",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/anders"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Stefan WINKLER",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/winkler"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Shiya, Shamantha YAN",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/syan"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Shiyan, Shane YAN",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/cs/people/syansy"
+          ],
+          "photo_url": null,
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 190,
+        "groups": {
+          "allStaffs": 145,
+          "allStaffs_teaching": 28,
+          "allStaffs_adjunct": 17,
+          "allStaffs_courtesy": 0
+        },
+        "errors": [],
+        "position_pct": 100,
+        "photo_url_pct": 76,
+        "profile_urls_pct": 84,
+        "research_areas_pct": 65
+      }
+    },
+    {
+      "code": "soc-disa",
+      "department": "Information Systems and Analytics",
+      "faculty": "School of Computing",
+      "url": "https://www.comp.nus.edu.sg/disa/people/",
+      "status": "success",
+      "layout": "soc-angular",
+      "people": [
+        {
+          "name": "Anand Mohan RAMCHAND",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/anand"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/anand.jpg",
+          "bio": null
+        },
+        {
+          "name": "Atreyi KANKANHALLI",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Healthcare Informatics, Digital Transformation, Platforms & Innovation, Intelligent Systems, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/atreyi"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/atreyi.jpg",
+          "bio": null
+        },
+        {
+          "name": "CHEN Nan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/chenn"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/chenn.jpg",
+          "bio": null
+        },
+        {
+          "name": "CUI Wei",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Intelligent Systems, Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/cuiwei"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/cuiwei.jpg",
+          "bio": null
+        },
+        {
+          "name": "FOONG Sew Bun",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/foongsb"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/foongsb.jpg",
+          "bio": null
+        },
+        {
+          "name": "Francis YEOH Song Chian",
+          "position": "Professorial Fellow",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/fyeoh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/fyeoh.jpg",
+          "bio": null
+        },
+        {
+          "name": "GOH Khim Yong",
+          "position": "Professor",
+          "roles": [
+            "Head, Department Of Information Systems and Analytics"
+          ],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, Digital Transformation, Platforms & Innovation, FinTech, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/gohky"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/gohky.jpg",
+          "bio": null
+        },
+        {
+          "name": "HENG Cheng Suang",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/hengcs"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/hengcs.jpg",
+          "bio": null
+        },
+        {
+          "name": "HUANG Ke Wei",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, FinTech, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/huangkw"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/huangkw.jpg",
+          "bio": null
+        },
+        {
+          "name": "JIN Chen",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, FinTech",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/jinc"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/jinc.jpg",
+          "bio": null
+        },
+        {
+          "name": "Jungpil HAHN",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, Computational Social Science, Data Science & Business Analytics, FinTech",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/jungpil"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/jungpil.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEE Boon Kee",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/leebk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leebk.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEE Jiho",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/leejiho"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/leejiho.jpg",
+          "bio": null
+        },
+        {
+          "name": "LEK Hsiang Hui",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [
+            "Assistant Dean, Industry Relations"
+          ],
+          "section": "Faculty",
+          "research_areas": "Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/lekhsian"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lekhsian.jpg",
+          "bio": null
+        },
+        {
+          "name": "LI Gujie",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, Computational Social Science, Healthcare Informatics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ligj"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ligj.jpg",
+          "bio": null
+        },
+        {
+          "name": "LI Xiaofan",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "FinTech, Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/lixf"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/lixf.jpg",
+          "bio": null
+        },
+        {
+          "name": "LI Yunyi",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/liyy"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/liyy.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIM Jie, Freddy",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/flim"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/flim.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIM Shi Ying",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Healthcare Informatics, Digital Transformation, Platforms & Innovation, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/sylim"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sylim.jpg",
+          "bio": null
+        },
+        {
+          "name": "LIU Na",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/liuna"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/liuna.jpg",
+          "bio": null
+        },
+        {
+          "name": "Mohammad Neamul KABIR",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Healthcare Informatics, Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/neamul"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/neamul.jpg",
+          "bio": null
+        },
+        {
+          "name": "Nicholas Mac Gregor GARCIA",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ngarcia"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ngarcia.jpg",
+          "bio": null
+        },
+        {
+          "name": "OH Lih Bin",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [
+            "Deputy Head, Department Of Information Systems and Analytics"
+          ],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ohlb"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/ohlb.jpg",
+          "bio": null
+        },
+        {
+          "name": "Oleh STUPAK",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/stupak"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/stupak.jpg",
+          "bio": null
+        },
+        {
+          "name": "POO Chiang Choon, Danny",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, Healthcare Informatics, Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/dpoo"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/dpoo.jpg",
+          "bio": null
+        },
+        {
+          "name": "Prakash Chandra SUKHWAL",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Computational Social Science, Healthcare Informatics, Data Science & Business Analytics, Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/e0508720"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/e0508720.jpg",
+          "bio": null
+        },
+        {
+          "name": "QIAO Dandan",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/qiaodd"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/qiaodd.jpg",
+          "bio": null
+        },
+        {
+          "name": "SETIONO, Rudy",
+          "position": "Associate Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/rudys"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/rudys.jpg",
+          "bio": null
+        },
+        {
+          "name": "SOW Jin Sze, Samantha",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/sowjs"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sowjs.jpg",
+          "bio": null
+        },
+        {
+          "name": "Shalinda ADIKARI",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/shalinda"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/shalinda.jpg",
+          "bio": null
+        },
+        {
+          "name": "Stanley KOK",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, Computational Social Science, Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/skok"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/skok.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Cheng Yian Bernard",
+          "position": "Tan Sri Runme Shaw Senior Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, Healthcare Informatics, Digital Transformation, Platforms & Innovation, Computational Social Science, Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/btan"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/btan.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Chuan Hoo",
+          "position": "Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Healthcare Informatics, Digital Transformation, Platforms & Innovation, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/tancho"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tancho.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Swee Lin, Sharon",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [
+            "Vice-Dean, Industry Relations"
+          ],
+          "section": "Faculty",
+          "research_areas": "Healthcare Informatics, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/tansl"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tansl.jpg",
+          "bio": null
+        },
+        {
+          "name": "TAN Wee Kek",
+          "position": "Associate Professor (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/tanwk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/tanwk.jpg",
+          "bio": null
+        },
+        {
+          "name": "TEO Hock Hai",
+          "position": "Provost's Chair Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Healthcare Informatics, Digital Transformation, Platforms & Innovation, Computational Social Science, Intelligent Systems",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/teohh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/teohh.jpg",
+          "bio": null
+        },
+        {
+          "name": "Varun KARAMSHETTY",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics, Digital Transformation, Platforms & Innovation",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/varunk"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/varunk.jpg",
+          "bio": null
+        },
+        {
+          "name": "Vikas DEEP",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/dvikas"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/dvikas.jpg",
+          "bio": null
+        },
+        {
+          "name": "Vivek Sundar MAGESH",
+          "position": "Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/sundar"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/sundar.jpg",
+          "bio": null
+        },
+        {
+          "name": "WANG QIUHONG",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [
+            "Assistant Dean, Undergraduate Studies"
+          ],
+          "section": "Faculty",
+          "research_areas": "Security, Healthcare Informatics, Computational Social Science, Data Science & Business Analytics",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/wangqh"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/wangqh.jpg",
+          "bio": null
+        },
+        {
+          "name": "YANG Lu",
+          "position": "Senior Lecturer (Educator Track)",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/yanglu"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/yanglu.jpg",
+          "bio": null
+        },
+        {
+          "name": "ZHAI Yingda",
+          "position": "Assistant Professor",
+          "roles": [],
+          "section": "Faculty",
+          "research_areas": "Digital Transformation, Platforms & Innovation, Computational Social Science",
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/zhaiyd"
+          ],
+          "photo_url": "https://www.comp.nus.edu.sg/~sochr/www/stfphotos/zhaiyd.jpg",
+          "bio": null
+        },
+        {
+          "name": "Aneesah Binte Abdul Latife",
+          "position": "Instructor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "HUANG Junjing",
+          "position": "Teaching Assistant",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "KONG Guoting",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LI Baishi",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LI Yonggang",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LIAO Yan",
+          "position": "Instructor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LIU Yan",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "SUN Jiaze",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "SUN Yichen",
+          "position": "Graduate Tutor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Shashank Shekhar TRIPATHI",
+          "position": "Instructor (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "WANG Yuchen",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "ZHANG Simian",
+          "position": "Teaching Assistant (Educator Track)",
+          "roles": [],
+          "section": "Teaching Staff",
+          "research_areas": null,
+          "profile_urls": [],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Thomas CHEVRIER",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/chevrier"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "EE Kiam Keong",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/eekk"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Thomas KOK Chun Hong",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/kokch"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LAI Kok Fung",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/laikf"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "LOH Yong Chye",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/lohyc"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Vincent LOY Jitchen",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/vloy"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Ivan NG",
+          "position": "Adjunct Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ngcp"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Victor NG",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/vng"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "OH Hyelim",
+          "position": "Visiting Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ohhl"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Jerry PING Wenjie",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/jping"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Kisenchand Nathumal Ranai",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ranai"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "Edward TAY Wee Meng",
+          "position": "Adjunct Associate Professor",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/etay"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "TEO Tat Khai",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/teotk"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "YEO Wee Kiang",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/weekiang"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "ZHAO Rui",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/zhaor"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "ZHAO Yiliang",
+          "position": "Part-Time Lecturer",
+          "roles": [],
+          "section": "Adjunct, Part-time & Visiting Faculty",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/zhaoyl"
+          ],
+          "photo_url": null,
+          "bio": null
+        },
+        {
+          "name": "PNG Paak Liang Ivan",
+          "position": "Courtesy Appointment - Professor",
+          "roles": [],
+          "section": "Courtesy Appointment",
+          "research_areas": null,
+          "profile_urls": [
+            "https://www.comp.nus.edu.sg/disa/people/ipng"
+          ],
+          "photo_url": null,
+          "bio": null
+        }
+      ],
+      "checks": {
+        "count": 71,
+        "groups": {
+          "allStaffs": 42,
+          "allStaffs_teaching": 12,
+          "allStaffs_adjunct": 16,
+          "allStaffs_courtesy": 1
+        },
+        "errors": [],
+        "position_pct": 100,
+        "photo_url_pct": 59,
+        "profile_urls_pct": 83,
+        "research_areas_pct": 45
+      }
+    }
+  ],
+  "summary": {
+    "success": 2,
+    "failed": 0,
+    "parse_failed": 0,
+    "pending": 0
+  }
+}
