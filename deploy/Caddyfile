@@ -1,0 +1,25 @@
+# SITE_ADDRESS comes from deploy/.env:
+#   a domain (profrating.example.com, or 1-2-3-4.sslip.io)  -> HTTPS, certificate fetched automatically
+#   :80                                                      -> plain HTTP, for trying it out locally
+{$SITE_ADDRESS::80} {
+	encode gzip
+
+	# The API: /api/professors -> api:8000/professors (same as the Vite dev proxy)
+	handle_path /api/* {
+		reverse_proxy api:8000
+	}
+
+	# The React app. Unknown paths fall back to index.html so a page refresh still works
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+}

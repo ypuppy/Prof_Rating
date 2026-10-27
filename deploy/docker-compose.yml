@@ -1,0 +1,54 @@
+# Production: three containers on one server. From deploy/:
+#   cp .env.example .env    # then fill it in
+#   docker compose up -d --build
+#
+#   web  Caddy: HTTPS, the React app, and /api -> api   (the only one open to the internet)
+#   api  FastAPI; runs "alembic upgrade head" on start
+#   db   PostgreSQL; data in the pgdata volume, reachable only by api
+services:
+  db:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: profrating
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in deploy/.env}
+      POSTGRES_DB: profrating
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U profrating -d profrating"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: ../backend
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://profrating:${POSTGRES_PASSWORD}@db:5432/profrating
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ../prof-rating-frontend
+      dockerfile: ../deploy/web.Dockerfile
+    restart: unless-stopped
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:-:80}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data      # HTTPS certificates: keep them, or Let's Encrypt may rate-limit you
+      - caddy_config:/config
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:
