@@ -49,8 +49,8 @@ docker compose up -d --wait
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (requirements.txt plus test tools)
+pip install -r requirements-dev.txt
 
 # Configure and create the tables
 cp .env.example .env
@@ -216,6 +216,11 @@ npm run dev
 ```
 
 The app will be running at `http://localhost:5173`
+
+## Deployment
+
+Production runs on one AWS Lightsail server with Docker Compose (Caddy for HTTPS and the
+React app, FastAPI, PostgreSQL). Step-by-step guide: [deploy/README.md](deploy/README.md).
 
 ## API Endpoints
 

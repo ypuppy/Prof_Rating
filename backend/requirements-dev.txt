@@ -1,0 +1,8 @@
+-r requirements.txt
+
+# Only needed for scripts/migrate_from_mongo.py
+pymongo==4.18.2
+
+# Tests
+httpx==0.28.1
+pytest==8.4.2

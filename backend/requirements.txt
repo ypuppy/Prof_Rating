@@ -1,3 +1,4 @@
+# What the server needs. Tests and one-off tools are in requirements-dev.txt
 fastapi==0.142.2
 uvicorn==0.54.0
 SQLAlchemy==2.1.3
@@ -5,12 +6,5 @@ psycopg[binary]==3.3.6
 alembic==1.20.0
 python-dotenv==1.2.4
 
-# Only needed for scripts/migrate_from_mongo.py
-pymongo==4.18.2
-
-# Parsing saved department pages (scripts/import_staff_page.py)
+# Parsing saved department pages (scripts/import_staff_page.py, run on the server too)
 beautifulsoup4==4.15.0
-
-# Tests
-httpx==0.28.1
-pytest==8.4.2

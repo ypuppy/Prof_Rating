@@ -1,3 +1,4 @@
+import os
 from typing import Optional
 
 from fastapi import Depends, FastAPI, HTTPException
@@ -24,9 +25,14 @@ app.include_router(me_router)
 app.include_router(reference_router)
 app.include_router(staff_router)
 
+# Only needed when the page and the API are on different origins. In production Caddy serves both
+# from one domain, so the default (the Vite dev server) is enough unless you add another frontend.
+CORS_ORIGINS = [o.strip() for o in os.getenv(
+    "CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
